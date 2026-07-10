@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Geomark SIG Solutions, Géomatique, Topographie, Détection de réseau &amp; Webmapping</title>
+<meta name="description" content="Geomark SIG Solutions, expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Le Tampon, La Réunion.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="index.html"><img src="assets/images/logo-geomark.png" alt="Geomark SIG Solutions"></a>
+    <nav class="nav" id="nav">
+      <a href="qui-sommes-nous.html" data-i18n="nav_about">Qui sommes-nous ?</a>
+      <div class="nav-item-drop">
+        <button class="nav-drop-btn" type="button" data-i18n="nav_solutions">Solutions <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-drop-menu">
+          <a href="mairie.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21h18M4 21V10l8-6 8 6v11M9 21v-6h6v6"/></svg><span data-i18n="nav_sol_mairie">Mairies</span></a>
+          <a href="intercommunalite.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11 6.5 17M12 11l5.5 6"/></svg><span data-i18n="nav_sol_epci">Intercommunalités</span></a>
+          <a href="ecosysteme-etat.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/></svg><span data-i18n="nav_sol_etat">État &amp; Institutions</span></a>
+          <a href="ong-associations.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M2 20c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5"/><path d="M16 11a3 3 0 1 0 0-6"/><path d="M14.5 14.5c2.8.3 4.5 2.5 4.5 5.5"/></svg><span data-i18n="nav_sol_ong">ONG &amp; Associations</span></a>
+          <a href="prive.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg><span data-i18n="nav_sol_prive">Entreprises privées</span></a>
+        </div>
+      </div>
+      <a href="sig.html" data-i18n="nav_sig">SIG</a>
+      <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
+      <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
+      <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="contact.html" class="btn-nav" data-i18n="nav_contact">Nous contacter</a>
+    </nav>
+    <div class="hdr-right">
+      <div class="langsw"><button data-lang="fr" class="active">FR</button><button data-lang="en">EN</button></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-in">
+      <span class="hero-logo-badge"><img class="hero-logo" src="assets/images/logo-geomark.png" alt="Geomark SIG Solutions"></span>
+      <h1 data-i18n="hero_title">La donnée géographique, <span class="acc">maîtrisée du terrain au cloud.</span></h1>
+      <p class="lead" data-i18n="hero_lead">Geomark SIG Solutions accompagne collectivités et entreprises dans leurs projets de systèmes d'information géographique : analyse spatiale, topographie, détection de réseaux et cartographie web sur mesure.</p>
+      <div class="hero-btns">
+        <a href="#expertises" class="btn btn-orange" data-i18n="hero_btn1">Découvrir nos expertises</a>
+        <a href="contact.html" class="btn btn-outline-l" data-i18n="hero_btn2">Nous contacter</a>
+      </div>
+    </div>
+    <div class="ph rwide construction reveal" style="margin-top:3.2rem;background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.18);">
+      <img src="assets/images/logo-geomark.png" alt="Geomark SIG Solutions" style="opacity:.85;">
+      <span style="color:rgba(255,255,255,.55);" data-i18n="ph_hero">Site en construction</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERSONA SELECTOR ============ -->
+<section class="sec persona-sec">
+  <div class="wrap">
+    <div class="center reveal" style="max-width:640px;margin-bottom:2.6rem;">
+      <span class="eyebrow" data-i18n="persona_eyebrow">Une expertise adaptée à votre réalité</span>
+      <h2 class="htitle" data-i18n="persona_title">Vous êtes...</h2>
+      <p class="hsub center" data-i18n="persona_sub">Chaque profil a ses urgences juridiques, son budget et son vocabulaire. Choisissez le vôtre pour voir directement les solutions qui vous concernent.</p>
+    </div>
+    <div class="persona-grid">
+
+      <a href="mairie.html" class="persona-card reveal">
+        <div class="persona-flip">
+          <div class="persona-face persona-front">
+            <div class="persona-ico"><svg viewBox="0 0 24 24"><path d="M3 21h18M4 21V10l8-6 8 6v11M9 21v-6h6v6"/></svg></div>
+            <h3 data-i18n="pc_mairie_t">Vous êtes une Mairie ?</h3>
+            <p data-i18n="pc_mairie_d">Cimetières, adressage, DECI, urbanisme : des obligations concrètes, un budget municipal maîtrisé.</p>
+          </div>
+          <div class="persona-face persona-back">
+            <div>
+              <span class="persona-tag" data-i18n="pc_mairie_tag">Commune · Mairie déléguée</span>
+              <p style="margin-top:.6rem;" data-i18n="pc_mairie_back">Proximité, conformité réglementaire, simplicité.</p>
+            </div>
+            <span class="persona-plink" data-i18n="pc_more">Découvrir nos solutions →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="intercommunalite.html" class="persona-card reveal">
+        <div class="persona-flip">
+          <div class="persona-face persona-front">
+            <div class="persona-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11 6.5 17M12 11l5.5 6"/></svg></div>
+            <h3 data-i18n="pc_epci_t">Vous êtes une Intercommunalité ?</h3>
+            <p data-i18n="pc_epci_d">PLUi, réseaux Classe A, PCRS, énergie : la donnée pensée à l'échelle du territoire.</p>
+          </div>
+          <div class="persona-face persona-back">
+            <div>
+              <span class="persona-tag" data-i18n="pc_epci_tag">EPCI · Métropole · Syndicat mixte</span>
+              <p style="margin-top:.6rem;" data-i18n="pc_epci_back">Ingénierie de la donnée, centralisation et mutualisation intercommunale.</p>
+            </div>
+            <span class="persona-plink" data-i18n="pc_more">Découvrir nos solutions →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="ecosysteme-etat.html" class="persona-card reveal">
+        <div class="persona-flip">
+          <div class="persona-face persona-front">
+            <div class="persona-ico"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/></svg></div>
+            <h3 data-i18n="pc_etat_t">Vous êtes une institution ?</h3>
+            <p data-i18n="pc_etat_d">État, Département, Région, SDIS : cohérence et fiabilité des données territoriales.</p>
+          </div>
+          <div class="persona-face persona-back">
+            <div>
+              <span class="persona-tag" data-i18n="pc_etat_tag">État · Département · Région · Commissions</span>
+              <p style="margin-top:.6rem;" data-i18n="pc_etat_back">Un partenaire technique pour les données que vous pilotez ou contrôlez.</p>
+            </div>
+            <span class="persona-plink" data-i18n="pc_more">Découvrir nos solutions →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="ong-associations.html" class="persona-card reveal">
+        <div class="persona-flip">
+          <div class="persona-face persona-front">
+            <div class="persona-ico"><svg viewBox="0 0 24 24"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M2 20c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5"/><path d="M16 11a3 3 0 1 0 0-6"/><path d="M14.5 14.5c2.8.3 4.5 2.5 4.5 5.5"/></svg></div>
+            <h3 data-i18n="pc_ong_t">Vous êtes une ONG ou association ?</h3>
+            <p data-i18n="pc_ong_d">Terrain, plaidoyer, reporting bailleurs : la carte qui priorise l'action et prouve l'impact.</p>
+          </div>
+          <div class="persona-face persona-back">
+            <div>
+              <span class="persona-tag" data-i18n="pc_ong_tag">Association · Fondation · ONG</span>
+              <p style="margin-top:.6rem;" data-i18n="pc_ong_back">Une solution adaptée au budget et au fonctionnement associatif.</p>
+            </div>
+            <span class="persona-plink" data-i18n="pc_more">Découvrir nos solutions →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="prive.html" class="persona-card reveal">
+        <div class="persona-flip">
+          <div class="persona-face persona-front">
+            <div class="persona-ico"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+            <h3 data-i18n="pc_prive_t">Vous êtes une entreprise ?</h3>
+            <p data-i18n="pc_prive_d">TP, bureaux d'études, promoteurs : réactivité, précision topographique, rentabilité.</p>
+          </div>
+          <div class="persona-face persona-back">
+            <div>
+              <span class="persona-tag" data-i18n="pc_prive_tag">TP · Bureaux d'études · Promoteurs</span>
+              <p style="margin-top:.6rem;" data-i18n="pc_prive_back">Des traitements géographiques pensés pour la rentabilité de vos projets.</p>
+            </div>
+            <span class="persona-plink" data-i18n="pc_more">Découvrir nos solutions →</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ SERVICES ============ -->
+<section class="sec" id="expertises">
+  <div class="wrap">
+    <div class="center reveal" style="max-width:640px;margin-bottom:3.2rem;">
+      <span class="eyebrow" data-i18n="svc_eyebrow">Nos expertises</span>
+      <h2 class="htitle" data-i18n="svc_title">Quatre métiers, une seule exigence</h2>
+      <p class="hsub center" data-i18n="svc_sub">De la donnée brute à la carte finale, chaque prestation est pensée comme un service technique complet, pas seulement une livraison de fichiers.</p>
+    </div>
+    <div class="svc-grid">
+
+      <a href="sig.html" class="svc-card reveal">
+        <div class="svc-thumb"><div class="ph-img contain r16-9"><img src="assets/images/syno_reso_reco.png" alt="Systèmes d'Information Géographique, Geomark SIG Solutions"></div></div>
+        <div class="svc-ico"><svg class="icon" viewBox="0 0 24 24"><path d="M4 5c0-1.1 3.58-2 8-2s8 .9 8 2-3.58 2-8 2-8-.9-8-2Z"/><path d="M4 5v6c0 1.1 3.58 2 8 2s8-.9 8-2V5"/><path d="M4 11v6c0 1.1 3.58 2 8 2s8-.9 8-2v-6"/></svg></div>
+        <h3 data-i18n="svc_sig_t">Systèmes d'Information Géographique</h3>
+        <p data-i18n="svc_sig_d">Analyse spatiale, géomarketing, géotraitements automatisés et architecture de bases de données géolocalisées.</p>
+        <span class="svc-link" data-i18n="svc_more">En savoir plus →</span>
+      </a>
+
+      <a href="topographie.html" class="svc-card reveal">
+        <div class="svc-thumb"><div class="ph-img contain r16-9"><img src="assets/images/RTK_terrain.png" alt="Levé GPS RTK, plan topographique, Geomark SIG Solutions"></div></div>
+        <div class="svc-ico"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+        <h3 data-i18n="svc_topo_t">Topographie</h3>
+        <p data-i18n="svc_topo_d">Levés GPS RTK haute précision et intégration SIG.</p>
+        <span class="svc-link" data-i18n="svc_more">En savoir plus →</span>
+      </a>
+
+      <a href="detection-reseau.html" class="svc-card reveal">
+        <div class="svc-thumb"><div class="ph-img contain r16-9"><img src="assets/images/reseau_CCIAG.JPG" alt="Détection de réseau, Geomark SIG Solutions"></div></div>
+        <div class="svc-ico"><svg class="icon" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M6.7 7.3 11 16M17.3 7.3 13 16M7 6h10"/></svg></div>
+        <h3 data-i18n="svc_detection_t">Détection de réseau</h3>
+        <p data-i18n="svc_detection_d">Détection et cartographie réglementaire des réseaux enterrés et aériens (eau, fibre, chaleur, gaz, électricité).</p>
+        <span class="svc-link" data-i18n="svc_more">En savoir plus →</span>
+      </a>
+
+      <a href="webmapping.html" class="svc-card reveal">
+        <div class="svc-thumb"><div class="ph-img contain r16-9"><img src="assets/images/portail-cartographique.png" alt="Webmapping, Geomark SIG Solutions"></div></div>
+        <div class="svc-ico"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 6 4 9s-1.5 6.5-4 9c-2.5-2.5-4-6-4-9s1.5-6.5 4-9Z"/></svg></div>
+        <h3 data-i18n="svc_webmapping_t">Webmapping</h3>
+        <p data-i18n="svc_webmapping_d">Portails cartographiques, applications Leaflet sur mesure et serveurs WMS/WFS déployés dans le cloud.</p>
+        <span class="svc-link" data-i18n="svc_more">En savoir plus →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT TEASER ============ -->
+<section class="sec sec-line sec-gray">
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="split-txt">
+        <span class="eyebrow" data-i18n="about_eyebrow">L'entreprise</span>
+        <h2 data-i18n="about_title">Geomark SIG Solutions, l'expertise d'un géomaticien indépendant</h2>
+        <p data-i18n="about_p1">Fondée par Robin Maume, géomaticien avec plus de 10 ans d'expérience, Geomark SIG Solutions est basée à La Réunion et intervient sur l'île, à Mayotte et à distance en métropole.</p>
+        <p data-i18n="about_p2">De la collectivité territoriale à l'entreprise privée, chaque mission est traitée avec la même exigence technique : comprendre le besoin métier avant de choisir l'outil.</p>
+        <a href="qui-sommes-nous.html" class="btn btn-dark" style="margin-top:.6rem;" data-i18n="about_btn">Qui sommes-nous ?</a>
+      </div>
+      <div class="split-media">
+        <div class="ph-img contain r4-3"><img src="assets/images/logo-geomark.png" alt="Robin Maume, Geomark SIG Solutions"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="ctaband reveal">
+      <div class="ctaband-tx">
+        <h2 data-i18n="cta_title">Un projet SIG, topographique ou cartographique ?</h2>
+        <p data-i18n="cta_sub">Discutons-en ensemble, réponse sous 48h.</p>
+      </div>
+      <div class="ctaband-btns">
+        <a href="contact.html" class="btn btn-orange" data-i18n="cta_btn1">Nous contacter</a>
+        <a href="#expertises" class="btn btn-outline-l" data-i18n="cta_btn2">Voir nos expertises</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<section class="ribbon-band">
+  <img class="ribbon-img" src="assets/images/ribbon-band.jpg" alt="Geomark SIG Solutions">
+</section>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <div>
+      <div class="ftr-brand"><img src="assets/images/logo-geomark.png" alt="Geomark"></div>
+      <p class="ftr-desc" data-i18n="ftr_desc">Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.</p>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_solutions">Solutions</div>
+      <a href="mairie.html" data-i18n="nav_sol_mairie">Mairies</a>
+      <a href="intercommunalite.html" data-i18n="nav_sol_epci">Intercommunalités</a>
+      <a href="ecosysteme-etat.html" data-i18n="nav_sol_etat">État &amp; Institutions</a>
+      <a href="ong-associations.html" data-i18n="nav_sol_ong">ONG &amp; Associations</a>
+      <a href="prive.html" data-i18n="nav_sol_prive">Entreprises privées</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_expertise">Expertises</div>
+      <a href="sig.html" data-i18n="nav_sig">SIG</a>
+      <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
+      <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
+      <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_company">Entreprise</div>
+      <a href="qui-sommes-nous.html" data-i18n="nav_about">Qui sommes-nous ?</a>
+      <a href="contact.html" data-i18n="nav_contact">Nous contacter</a>
+      <a href="mentions-legales.html" data-i18n="nav_legal">Mentions légales</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_contact">Contact</div>
+      <a href="mailto:societegeomark@gmail.com">societegeomark@gmail.com</a>
+      <a href="tel:+33613184710">+33 6 13 18 47 10</a>
+      <a href="tel:+262693616923">+262 6 93 61 69 23</a>
+      <a href="https://www.linkedin.com/in/robin-maume/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap ftr-bottom">
+    <span data-i18n="ftr_copy">© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013</span>
+    <span>21°16'S, 55°30'E · Le Tampon, La Réunion</span>
+  </div>
+  <div class="wrap ftr-bottom" style="border-top:none;padding-top:0;">
+    <span style="font-size:.68rem;color:rgba(255,255,255,.3);" data-i18n="ftr_credit">Icônes animées, ressources libres de droits, crédit auteur à compléter</span>
+  </div>
+</footer>
+
+<script>
+window.I18N = {
+  fr: {
+    nav_about:"Qui sommes-nous ?", nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
+    nav_solutions:"Solutions", nav_sol_mairie:"Mairies", nav_sol_epci:"Intercommunalités", nav_sol_etat:"État &amp; Institutions", nav_sol_ong:"ONG &amp; Associations", nav_sol_prive:"Entreprises privées",
+    ftr_h_solutions:"Solutions",
+    persona_eyebrow:"Une expertise adaptée à votre réalité", persona_title:"Vous êtes...",
+    persona_sub:"Chaque profil a ses urgences juridiques, son budget et son vocabulaire. Choisissez le vôtre pour voir directement les solutions qui vous concernent.",
+    pc_mairie_t:"Vous êtes une Mairie ?", pc_mairie_d:"Cimetières, adressage, DECI, urbanisme : des obligations concrètes, un budget municipal maîtrisé.",
+    pc_mairie_tag:"Commune · Mairie déléguée", pc_mairie_back:"Proximité, conformité réglementaire, simplicité.",
+    pc_epci_t:"Vous êtes une Intercommunalité ?", pc_epci_d:"PLUi, réseaux Classe A, PCRS, énergie : la donnée pensée à l'échelle du territoire.",
+    pc_epci_tag:"EPCI · Métropole · Syndicat mixte", pc_epci_back:"Ingénierie de la donnée, centralisation et mutualisation intercommunale.",
+    pc_etat_t:"Vous êtes une institution ?", pc_etat_d:"État, Département, Région, SDIS : cohérence et fiabilité des données territoriales.",
+    pc_etat_tag:"État · Département · Région · Commissions", pc_etat_back:"Un partenaire technique pour les données que vous pilotez ou contrôlez.",
+    pc_ong_t:"Vous êtes une ONG ou association ?", pc_ong_d:"Terrain, plaidoyer, reporting bailleurs : la carte qui priorise l'action et prouve l'impact.",
+    pc_ong_tag:"Association · Fondation · ONG", pc_ong_back:"Une solution adaptée au budget et au fonctionnement associatif.",
+    pc_prive_t:"Vous êtes une entreprise ?", pc_prive_d:"TP, bureaux d'études, promoteurs : réactivité, précision topographique, rentabilité.",
+    pc_prive_tag:"TP · Bureaux d'études · Promoteurs", pc_prive_back:"Des traitements géographiques pensés pour la rentabilité de vos projets.",
+    pc_more:"Découvrir nos solutions →",
+    hero_title:'La donnée géographique, <span class="acc">maîtrisée du terrain au cloud.</span>',
+    hero_lead:"Geomark SIG Solutions accompagne collectivités et entreprises dans leurs projets de systèmes d'information géographique : analyse spatiale, topographie, détection de réseaux et cartographie web sur mesure.",
+    hero_btn1:"Découvrir nos expertises", hero_btn2:"Nous contacter",
+    ph_hero:"Site en construction",
+    stat_years:"Ans d'expérience", stat_projects:"Projets SIG livrés", stat_countries:"Pays couverts",
+    svc_eyebrow:"Nos expertises", svc_title:"Quatre métiers, une seule exigence",
+    svc_sub:"De la donnée brute à la carte finale, chaque prestation est pensée comme un service technique complet, pas seulement une livraison de fichiers.",
+    ph_sig_card:"Emplacement image, analyse spatiale / infographie SIG",
+    ph_topo_card:"Emplacement image, levé GPS RTK / plan topographique",
+    ph_detection_card:"Emplacement image, synoptique réseau / plan de récolement",
+    ph_webmapping_card:"Emplacement image, portail cartographique / application Leaflet",
+    svc_sig_t:"Systèmes d'Information Géographique", svc_sig_d:"Analyse spatiale, géomarketing, géotraitements automatisés et architecture de bases de données géolocalisées.",
+    svc_topo_t:"Topographie", svc_topo_d:"Levés GPS RTK haute précision et intégration SIG.",
+    svc_detection_t:"Détection de réseau", svc_detection_d:"Détection et cartographie réglementaire des réseaux enterrés et aériens (eau, fibre, chaleur, gaz, électricité).",
+    svc_webmapping_t:"Webmapping", svc_webmapping_d:"Portails cartographiques, applications Leaflet sur mesure et serveurs WMS/WFS déployés dans le cloud.",
+    svc_more:"En savoir plus →",
+    about_eyebrow:"L'entreprise", about_title:"Geomark SIG Solutions, l'expertise d'un géomaticien indépendant",
+    about_p1:"Fondée par Robin Maume, géomaticien avec plus de 10 ans d'expérience, Geomark SIG Solutions est basée à La Réunion et intervient sur l'île, à Mayotte et à distance en métropole.",
+    about_p2:"De la collectivité territoriale à l'entreprise privée, chaque mission est traitée avec la même exigence technique : comprendre le besoin métier avant de choisir l'outil.",
+    about_btn:"Qui sommes-nous ?", ph_about:"Emplacement image, portrait ou photo d'équipe",
+    cta_title:"Un projet SIG, topographique ou cartographique ?", cta_sub:"Discutons-en ensemble, réponse sous 48h.",
+    cta_btn1:"Nous contacter", cta_btn2:"Voir nos expertises",
+    ftr_desc:"Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.",
+    ftr_h_expertise:"Expertises", ftr_h_company:"Entreprise", ftr_h_contact:"Contact",
+    ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013",
+    ftr_credit:"Icônes animées, ressources libres de droits, crédit auteur à compléter"
+  },
+  en: {
+    nav_about:"About us", nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_contact:"Contact us", nav_legal:"Legal notice",
+    nav_solutions:"Solutions", nav_sol_mairie:"Municipalities", nav_sol_epci:"Inter-municipal bodies", nav_sol_etat:"State &amp; Institutions", nav_sol_ong:"NGOs &amp; Associations", nav_sol_prive:"Private companies",
+    ftr_h_solutions:"Solutions",
+    persona_eyebrow:"Expertise tailored to your reality", persona_title:"You are...",
+    persona_sub:"Every profile has its own legal deadlines, budget and vocabulary. Pick yours to see the solutions that concern you directly.",
+    pc_mairie_t:"A municipality (mairie)?", pc_mairie_d:"Cemeteries, addressing, fire defence, planning: concrete obligations, a controlled municipal budget.",
+    pc_mairie_tag:"Municipality · Delegated town", pc_mairie_back:"Proximity, regulatory compliance, simplicity.",
+    pc_epci_t:"An inter-municipal body?", pc_epci_d:"Local urban plans, Class A networks, shared street-plan base maps, energy: data at territory scale.",
+    pc_epci_tag:"EPCI · Metropolis · Joint syndicate", pc_epci_back:"Data engineering, centralisation and inter-municipal pooling.",
+    pc_etat_t:"An institution?", pc_etat_d:"State, Department, Region, fire services: consistency and reliability of territorial data.",
+    pc_etat_tag:"State · Department · Region · Commissions", pc_etat_back:"A technical partner for the data you steer or oversee.",
+    pc_ong_t:"An NGO or association?", pc_ong_d:"Fieldwork, advocacy, funder reporting: the map that prioritises action and proves impact.",
+    pc_ong_tag:"Association · Foundation · NGO", pc_ong_back:"A solution matched to associative budgets and ways of working.",
+    pc_prive_t:"A private company?", pc_prive_d:"Public works, engineering firms, developers: responsiveness, surveying precision, profitability.",
+    pc_prive_tag:"Public works · Engineering firms · Developers", pc_prive_back:"Geographic processing designed for your projects' profitability.",
+    pc_more:"Discover our solutions →",
+    hero_title:'Geographic data, <span class="acc">mastered from the field to the cloud.</span>',
+    hero_lead:"Geomark SIG Solutions supports local authorities and businesses on their geographic information system projects: spatial analysis, land surveying, network detection and custom web mapping.",
+    hero_btn1:"Discover our expertise", hero_btn2:"Contact us",
+    ph_hero:"Site under construction",
+    stat_years:"Years of experience", stat_projects:"GIS projects delivered", stat_countries:"Countries covered",
+    svc_eyebrow:"Our expertise", svc_title:"Four disciplines, one standard",
+    svc_sub:"From raw data to the final map, every engagement is designed as a complete technical service, not just a file delivery.",
+    ph_sig_card:"Image placeholder, spatial analysis / GIS infographic",
+    ph_topo_card:"Image placeholder, RTK GPS survey / topographic plan",
+    ph_detection_card:"Image placeholder, network synoptic / as-built plan",
+    ph_webmapping_card:"Image placeholder, map portal / Leaflet application",
+    svc_sig_t:"Geographic Information Systems", svc_sig_d:"Spatial analysis, geomarketing, automated geoprocessing and geolocated database architecture.",
+    svc_topo_t:"Land Surveying", svc_topo_d:"High-precision RTK GPS surveys and GIS integration.",
+    svc_detection_t:"Network Detection", svc_detection_d:"Detection and regulatory mapping of underground and aerial networks (water, fibre, heating, gas, electricity).",
+    svc_webmapping_t:"Web Mapping", svc_webmapping_d:"Map portals, custom Leaflet applications and WMS/WFS servers deployed in the cloud.",
+    svc_more:"Learn more →",
+    about_eyebrow:"The company", about_title:"Geomark SIG Solutions, the expertise of an independent GIS specialist",
+    about_p1:"Founded by Robin Maume, a GIS specialist with over 10 years of experience, Geomark SIG Solutions is based in Réunion Island and operates across the island, in Mayotte and remotely in mainland France.",
+    about_p2:"From local authorities to private companies, every engagement is handled with the same technical rigour: understanding the business need before choosing the tool.",
+    about_btn:"About us", ph_about:"Image placeholder, portrait or team photo",
+    cta_title:"A GIS, surveying or mapping project?", cta_sub:"Let's talk about it, response within 48h.",
+    cta_btn1:"Contact us", cta_btn2:"See our expertise",
+    ftr_desc:"Independent expertise in geographic information systems, land surveying, network detection and web mapping. Based in Le Tampon, Réunion Island.",
+    ftr_h_expertise:"Expertise", ftr_h_company:"Company", ftr_h_contact:"Contact",
+    ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013",
+    ftr_credit:"Animated icons, royalty-free resources, author credit to be completed"
+  }
+};
+</script>
+<script src="assets/main.js"></script>
+</body>
+</html>

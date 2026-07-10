@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.geomark.fr/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.geomark.fr/qui-sommes-nous.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.geomark.fr/sig.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.geomark.fr/topographie.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.geomark.fr/detection-reseau.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.geomark.fr/webmapping.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.geomark.fr/mairie.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.geomark.fr/intercommunalite.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.geomark.fr/ecosysteme-etat.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.geomark.fr/ong-associations.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.geomark.fr/prive.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.geomark.fr/contact.html</loc><priority>0.6</priority></url>
+</urlset>

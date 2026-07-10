@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Solutions SIG pour les Mairies · Geomark SIG Solutions</title>
+<meta name="description" content="Cartographie de cimetière, Base Adresse Locale, DECI, PCS, Géoportail de l'Urbanisme : les obligations cartographiques des communes et comment Geomark SIG Solutions y répond.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="index.html"><img src="assets/images/logo-geomark.png" alt="Geomark SIG Solutions"></a>
+    <nav class="nav" id="nav">
+      <a href="qui-sommes-nous.html" data-i18n="nav_about">Qui sommes-nous ?</a>
+      <div class="nav-item-drop">
+        <button class="nav-drop-btn" type="button" data-i18n="nav_solutions">Solutions <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-drop-menu">
+          <a href="mairie.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21h18M4 21V10l8-6 8 6v11M9 21v-6h6v6"/></svg><span data-i18n="nav_sol_mairie">Mairies</span></a>
+          <a href="intercommunalite.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11 6.5 17M12 11l5.5 6"/></svg><span data-i18n="nav_sol_epci">Intercommunalités</span></a>
+          <a href="ecosysteme-etat.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/></svg><span data-i18n="nav_sol_etat">État &amp; Institutions</span></a>
+          <a href="ong-associations.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M2 20c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5"/><path d="M16 11a3 3 0 1 0 0-6"/><path d="M14.5 14.5c2.8.3 4.5 2.5 4.5 5.5"/></svg><span data-i18n="nav_sol_ong">ONG &amp; Associations</span></a>
+          <a href="prive.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg><span data-i18n="nav_sol_prive">Entreprises privées</span></a>
+        </div>
+      </div>
+      <a href="sig.html" data-i18n="nav_sig">SIG</a>
+      <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
+      <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
+      <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="contact.html" class="btn-nav" data-i18n="nav_contact">Nous contacter</a>
+    </nav>
+    <div class="hdr-right">
+      <div class="langsw"><button data-lang="fr" class="active">FR</button><button data-lang="en">EN</button></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<section class="phero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-i18n="bc_home">Accueil</a> / <span data-i18n="nav_sol_mairie">Mairies</span></div>
+    <span class="eyebrow" data-i18n="eyebrow">Solutions pour les communes</span>
+    <h1 data-i18n="h1"><span class="h1-ico"><video autoplay loop muted playsinline><source src="assets/videos/hotel-de-ville.mp4" type="video/mp4"></video></span>Vous êtes une Mairie</h1>
+    <p class="lead" data-i18n="lead">Adressage, urbanisme, voirie, eau, défense incendie, cimetière : des obligations bien réelles. Voici, thème par thème, ce que la loi vous impose et comment nous le traduisons en plan, en carte ou en base de données exploitable.</p>
+    <div class="chiprow">
+      <span class="chip" data-i18n="class1">Commune rurale</span>
+      <span class="chip" data-i18n="class2">Commune urbaine</span>
+      <span class="chip" data-i18n="class3">Mairie déléguée</span>
+      <span class="chip" data-i18n="class4">Commune nouvelle</span>
+    </div>
+    <div class="jumprow">
+      <a href="#securite" data-i18n="jump1">🚨 Sécurité &amp; risques</a>
+      <a href="#urbanisme" data-i18n="jump2">🗺️ Urbanisme &amp; adressage</a>
+      <a href="#voirie" data-i18n="jump3">🛣️ Voirie</a>
+      <a href="#eau" data-i18n="jump4">💧 Eau &amp; assainissement</a>
+      <a href="#funeraire" data-i18n="jump5">⚰️ Funéraire &amp; cimetières</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="split-txt">
+        <span class="eyebrow" data-i18n="intro_eyebrow">Notre approche</span>
+        <h2 data-i18n="intro_h2">Simplifiez votre quotidien, sécurisez vos dossiers</h2>
+        <p data-i18n="intro_p1">La gestion d'une mairie demande une polyvalence exemplaire entre état civil, urbanisme, cimetière et voirie. Pour vous libérer des contraintes techniques, nous transformons vos données en documents prêts à l'emploi.</p>
+        <p data-i18n="intro_p2">Nous produisons des livrables conformes aux attentes de la préfecture, du SDIS et de l'ANCT, sans que vous ayez à vous former à des outils SIG complexes. Chaque mission inclut les plans nécessaires, des données structurées et un accompagnement personnalisé pour vous garantir une prise en main immédiate et en toute confiance.</p>
+      </div>
+      <div class="split-media"><div class="ph-img auto"><img src="assets/images/Mairie_approche.png" alt="Approche cartographique pour les mairies, Geomark SIG Solutions"></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="thread">
+
+  <!-- Thème 01, Sécurité publique & risques -->
+  <section class="theme-block sec-line sec-gray" id="securite">
+    <div class="wrap">
+      <div class="theme-node ico-red">🚨</div>
+      <div class="theme-head reveal">
+        <span class="eyebrow" data-i18n="t2_eyebrow">Sécurité publique &amp; risques</span>
+        <h2 class="htitle" data-i18n="t2_h2">Protégez votre commune et assurez votre tranquillité</h2>
+        <p class="hsub center" data-i18n="t2_sub">Le Plan Communal de Sauvegarde (PCS) et la gestion de la Défense Extérieure Contre l'Incendie (DECI) sont les piliers de votre capacité de réponse face aux imprévus. Nous vous aidons à structurer ces documents essentiels pour que vous puissiez agir avec sérénité et réactivité, tout en répondant pleinement aux exigences réglementaires qui incombent à la mairie.</p>
+      </div>
+      <div class="obl-grid c2 reveal">
+
+        <div class="obl-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/pcs.png" alt="Plan Communal de Sauvegarde, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-red emoji-ico">🚨</div>
+            <h4 data-i18n="o2_1_t">Plan Communal de Sauvegarde (PCS)</h4>
+            <p data-i18n="o2_1_d">Cartes opérationnelles pour les secours : itinéraires d'évacuation, populations vulnérables, centres d'hébergement.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o2_1_legale"><b>Base légale</b>, Loi du 13/08/2004 (modernisation de la sécurité civile)</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o2_1_delai"><b>Délai</b>, immédiat si commune à risque, révision quinquennale</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o2_1_ctrl"><b>Contrôle</b>, Préfet (SIDPC)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obl-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/protection_incendie.png" alt="Règlement DECI, points d'eau incendie, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-red emoji-ico">🚒</div>
+            <h4 data-i18n="o2_2_t">Règlement DECI (points d'eau incendie)</h4>
+            <p data-i18n="o2_2_d">Géolocalisation et suivi de disponibilité de tous vos points d'eau incendie, transmis aux services de secours.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o2_2_legale"><b>Base légale</b>, Art. L.2213-32 CGCT (réforme 2015)</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o2_2_delai"><b>Délai</b>, mise en conformité RDDECI sous 3 à 6 ans</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o2_2_ctrl"><b>Contrôle</b>, SDIS, Préfet (arrêté DECI)</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Thème 02, Urbanisme & adressage -->
+  <section class="theme-block" id="urbanisme">
+    <div class="wrap">
+      <div class="theme-node ico-blue">🗺️</div>
+      <div class="theme-head reveal">
+        <span class="eyebrow" data-i18n="t3_eyebrow">Urbanisme &amp; adressage</span>
+        <h2 class="htitle" data-i18n="t3_h2">Consolidez vos actes d'urbanisme et certifiez vos adresses.</h2>
+        <p class="hsub center" data-i18n="t3_sub">Deux obligations souvent sous-estimées, mais qui conditionnent directement les autorisations d'urbanisme et l'arrivée des secours.</p>
+      </div>
+      <div class="obl-grid reveal">
+
+        <div class="obl-card">
+          <div class="ph-img contain obl-shot"><img src="assets/images/geoportail-urbanisme.jpg" alt="Géoportail de l'Urbanisme, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-blue emoji-ico">🗺️</div>
+            <h4 data-i18n="o3_1_t">Géoportail de l'Urbanisme (GPU)</h4>
+            <p data-i18n="o3_1_d">Numérisation aux standards nationaux CNIG pour rendre votre PLU ou carte communale exécutoire et opposable.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o3_1_legale"><b>Base légale</b>, Art. L.133-1 Code de l'urbanisme</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o3_1_delai"><b>Délai</b>, publication immédiate dès l'approbation</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o3_1_ctrl"><b>Contrôle</b>, Préfet, CNIG</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obl-card">
+          <div class="ph-img contain obl-shot"><img src="assets/images/base-adresse-locale.png" alt="Base Adresse Locale, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-blue emoji-ico">📍</div>
+            <h4 data-i18n="o3_2_t">Base Adresse Locale (BAL)</h4>
+            <p data-i18n="o3_2_d">Répertoriage, nommage et géolocalisation de toutes vos voies et adresses pour alimenter la Base Adresse Nationale.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o3_2_legale"><b>Base légale</b>, Loi 3DS (2022)</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o3_2_delai"><b>Délai</b>, obligatoire, mise à jour continue</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o3_2_ctrl"><b>Contrôle</b>, ANCT / IGN, DGCL</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obl-card">
+          <div class="ph-img contain obl-shot"><img src="assets/images/cadastre.png" alt="Cadastre, RPCU et PCI vecteur, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-blue emoji-ico">🗂️</div>
+            <h4 data-i18n="o5_3_t">Cadastre, RPCU &amp; PCI vecteur</h4>
+            <p data-i18n="o5_3_d">Gestion du domaine public/privé et mise à jour parcellaire continue, en lien avec la DGFIP.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o5_3_legale"><b>Base légale</b>, Code général des impôts</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o5_3_delai"><b>Délai</b>, mise à jour continue</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o5_3_ctrl"><b>Contrôle</b>, DGFIP / DDFIP</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Thème 03, Voirie -->
+  <section class="theme-block sec-line sec-gray" id="voirie">
+    <div class="wrap">
+      <div class="theme-node ico-orange">🚦</div>
+      <div class="theme-head reveal">
+        <span class="eyebrow" data-i18n="t4_eyebrow">Voirie</span>
+        <h2 class="htitle" data-i18n="t4_h2">Un tracé et un statut juridique à jour, à tout moment</h2>
+      </div>
+      <div class="obl-grid c2 reveal">
+
+        <div class="obl-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/circulation.png" alt="Plans de circulation et arrêtés de voirie, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-orange emoji-ico">🚦</div>
+            <h4 data-i18n="o4_1_t">Plans de circulation et arrêtés de voirie</h4>
+            <p data-i18n="o4_1_d">Cartographie de la réglementation du trafic, du stationnement et des limitations de tonnage.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o4_1_legale"><b>Base légale</b>, Art. L.2213-1 CGCT</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o4_1_delai"><b>Délai</b>, publication et affichage avant entrée en vigueur</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o4_1_ctrl"><b>Contrôle</b>, Préfet, tribunal administratif</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obl-card">
+          <div class="ph-img auto obl-shot" style="aspect-ratio:1.833;"><img src="assets/images/tableau_classement_voirie.png" alt="Tableau de classement de la voirie communale, Geomark SIG Solutions" style="object-fit:cover;"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-orange emoji-ico">🛣️</div>
+            <h4 data-i18n="o4_2_t">Tableau de classement de la voirie communale</h4>
+            <p data-i18n="o4_2_d">Statut juridique et tracé à jour des voies communales et chemins ruraux, indispensable en cas de vente ou d'aliénation.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o4_2_legale"><b>Base légale</b>, Code de la voirie routière</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o4_2_delai"><b>Délai</b>, mise à jour à chaque modification du réseau</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o4_2_ctrl"><b>Contrôle</b>, Préfet</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Thème 04, Eau & assainissement -->
+  <section class="theme-block" id="eau">
+    <div class="wrap">
+      <div class="theme-node ico-teal">💧</div>
+      <div class="theme-head reveal">
+        <span class="eyebrow" data-i18n="t5_eyebrow">Eau &amp; assainissement</span>
+        <h2 class="htitle" data-i18n="t5_h2">Des zonages qui conditionnent vos autorisations d'urbanisme</h2>
+      </div>
+      <div class="obl-grid c2 reveal">
+
+        <div class="obl-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/assainissement.png" alt="Zonage d'assainissement et zonage pluvial, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-teal emoji-ico">💧</div>
+            <h4 data-i18n="o5_1_t">Zonage d'assainissement &amp; zonage pluvial</h4>
+            <p data-i18n="o5_1_d">Délimitation des secteurs collectifs et non collectifs, et cartographie de gestion des eaux pluviales.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o5_1_legale"><b>Base légale</b>, Art. L.2224-10 CGCT</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o5_1_delai"><b>Délai</b>, avant tout document d'urbanisme, mise à jour périodique</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o5_1_ctrl"><b>Contrôle</b>, SPANC, Agence de l'eau, DDT(M)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obl-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/captage.png" alt="Périmètres de protection des captages, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-teal emoji-ico">🚰</div>
+            <h4 data-i18n="o5_2_t">Périmètres de protection des captages</h4>
+            <p data-i18n="o5_2_d">Délimitation de la Déclaration d'Utilité Publique autour de vos points de prélèvement d'eau potable.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o5_2_legale"><b>Base légale</b>, Code de la santé publique</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o5_2_delai"><b>Délai</b>, révision périodique de la DUP</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o5_2_ctrl"><b>Contrôle</b>, ARS</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Thème 05, Funéraire & cimetières -->
+  <section class="theme-block sec-line sec-gray" id="funeraire">
+    <div class="wrap">
+      <div class="theme-node ico-purple">⚰️</div>
+      <div class="theme-head reveal">
+        <span class="eyebrow" data-i18n="t1_eyebrow">Funéraire &amp; cimetières</span>
+        <h2 class="htitle" data-i18n="t1_h2">Le cimetière, un espace public sous haute exigence légale</h2>
+        <p class="hsub center" data-i18n="t1_sub">Assurez une gestion apaisée et conforme de la police des funérailles</p>
+      </div>
+      <div class="obl-grid c3 reveal">
+
+        <div class="obl-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/cimetiere.png" alt="Sectorisation du cimetière, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-purple emoji-ico">⚰️</div>
+            <h4 data-i18n="o1_1_t">Sectorisation du cimetière</h4>
+            <p data-i18n="o1_1_d">Plan centimétrique distinguant terrain commun, concessions payantes et espace cinéraire, conforme à l'organisation réglementaire du cimetière.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o1_1_legale"><b>Base légale</b>, Art. L.2223-1 CGCT</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o1_1_delai"><b>Délai</b>, en continu, dès aménagement ou extension</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o1_1_ctrl"><b>Contrôle</b>, Préfet, tribunal administratif</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obl-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/inter_tombe.png" alt="Relevé des inter-tombes, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-purple emoji-ico">📏</div>
+            <h4 data-i18n="o1_2_t">Respect des inter-tombes</h4>
+            <p data-i18n="o1_2_d">Vérification des distances légales (30 à 50 cm) entre fosses, garantie uniquement par un plan de très haute précision.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o1_2_legale"><b>Base légale</b>, Art. R.2223-3 et 4 CGCT</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o1_2_delai"><b>Délai</b>, à vérifier avant chaque nouvelle inhumation</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o1_2_ctrl"><b>Contrôle</b>, Préfet, juge administratif</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obl-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/concession.png" alt="Constat de reprise de concession, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-purple emoji-ico">🔍</div>
+            <h4 data-i18n="o1_3_t">Reprise des concessions abandonnées</h4>
+            <p data-i18n="o1_3_d">Identification graphique des sépultures en état d'abandon lors des constats officiels de la procédure de reprise.</p>
+            <div class="obl-meta">
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg><span data-i18n="o1_3_legale"><b>Base légale</b>, Procédure CGCT et jurisprudence administrative</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span data-i18n="o1_3_delai"><b>Délai</b>, procédure triennale (constats sur 3 ans consécutifs)</span></div>
+              <div class="m"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 8 7 9 4-1 7-4 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="o1_3_ctrl"><b>Contrôle</b>, Préfet, tribunal administratif</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<section class="sec sec-line">
+  <div class="wrap">
+    <div class="ctaband reveal">
+      <div class="ctaband-tx">
+        <h2 data-i18n="cta_title">Une obligation cartographique à régulariser ?</h2>
+        <p data-i18n="cta_sub">Décrivez votre situation, nous vous indiquons ce qui est réellement urgent et ce qui peut attendre.</p>
+      </div>
+      <div class="ctaband-btns">
+        <a href="contact.html" class="btn btn-orange" data-i18n="cta_btn">Nous contacter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ribbon-band">
+  <img class="ribbon-img" src="assets/images/ribbon-band.jpg" alt="Geomark SIG Solutions">
+</section>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <div>
+      <div class="ftr-brand"><img src="assets/images/logo-geomark.png" alt="Geomark"></div>
+      <p class="ftr-desc" data-i18n="ftr_desc">Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.</p>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_solutions">Solutions</div>
+      <a href="mairie.html" data-i18n="nav_sol_mairie">Mairies</a>
+      <a href="intercommunalite.html" data-i18n="nav_sol_epci">Intercommunalités</a>
+      <a href="ecosysteme-etat.html" data-i18n="nav_sol_etat">État &amp; Institutions</a>
+      <a href="ong-associations.html" data-i18n="nav_sol_ong">ONG &amp; Associations</a>
+      <a href="prive.html" data-i18n="nav_sol_prive">Entreprises privées</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_expertise">Expertises</div>
+      <a href="sig.html" data-i18n="nav_sig">SIG</a>
+      <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
+      <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
+      <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_company">Entreprise</div>
+      <a href="qui-sommes-nous.html" data-i18n="nav_about">Qui sommes-nous ?</a>
+      <a href="contact.html" data-i18n="nav_contact">Nous contacter</a>
+      <a href="mentions-legales.html" data-i18n="nav_legal">Mentions légales</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_contact">Contact</div>
+      <a href="mailto:societegeomark@gmail.com">societegeomark@gmail.com</a>
+      <a href="tel:+33613184710">+33 6 13 18 47 10</a>
+      <a href="tel:+262693616923">+262 6 93 61 69 23</a>
+      <a href="https://www.linkedin.com/in/robin-maume/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap ftr-bottom">
+    <span data-i18n="ftr_copy">© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013</span>
+    <span>21°16'S, 55°30'E · Le Tampon, La Réunion</span>
+  </div>
+</footer>
+
+<script>
+window.I18N = {
+  fr: {
+    nav_about:"Qui sommes-nous ?", nav_solutions:"Solutions", nav_sol_mairie:"Mairies", nav_sol_epci:"Intercommunalités", nav_sol_etat:"État &amp; Institutions", nav_sol_ong:"ONG &amp; Associations", nav_sol_prive:"Entreprises privées",
+    nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
+    bc_home:"Accueil", eyebrow:"Solutions pour les communes",
+    h1:'<span class="h1-ico"><video autoplay loop muted playsinline><source src="assets/videos/hotel-de-ville.mp4" type="video/mp4"></video></span>Vous êtes une Mairie',
+    lead:"Adressage, urbanisme, voirie, eau, défense incendie, cimetière : des obligations bien réelles. Voici, thème par thème, ce que la loi vous impose et comment nous le traduisons en plan, en carte ou en base de données exploitable.",
+    class1:"Commune rurale", class2:"Commune urbaine", class3:"Mairie déléguée", class4:"Commune nouvelle",
+    jump1:"🚨 Sécurité &amp; risques", jump2:"🗺️ Urbanisme &amp; adressage", jump3:"🛣️ Voirie", jump4:"💧 Eau &amp; assainissement", jump5:"⚰️ Funéraire &amp; cimetières",
+    intro_eyebrow:"Notre approche", intro_h2:"Simplifiez votre quotidien, sécurisez vos dossiers",
+    intro_p1:"La gestion d'une mairie demande une polyvalence exemplaire entre état civil, urbanisme, cimetière et voirie. Pour vous libérer des contraintes techniques, nous transformons vos données en documents prêts à l'emploi.",
+    intro_p2:"Nous produisons des livrables conformes aux attentes de la préfecture, du SDIS et de l'ANCT, sans que vous ayez à vous former à des outils SIG complexes. Chaque mission inclut les plans nécessaires, des données structurées et un accompagnement personnalisé pour vous garantir une prise en main immédiate et en toute confiance.",
+    ph_intro:"Emplacement image, mairie / élu et plan communal",
+    t1_eyebrow:"Funéraire &amp; cimetières", t1_h2:"Le cimetière, un espace public sous haute exigence légale", t1_sub:"Assurez une gestion apaisée et conforme de la police des funérailles",
+    o1_1_shot:"Emplacement capture, plan de sectorisation du cimetière", o1_1_t:"Sectorisation du cimetière", o1_1_d:"Plan centimétrique distinguant terrain commun, concessions payantes et espace cinéraire, conforme à l'organisation réglementaire du cimetière.",
+    o1_1_legale:"<b>Base légale</b>, Art. L.2223-1 CGCT", o1_1_delai:"<b>Délai</b>, en continu, dès aménagement ou extension", o1_1_ctrl:"<b>Contrôle</b>, Préfet, tribunal administratif",
+    o1_2_shot:"Emplacement capture, relevé des inter-tombes", o1_2_t:"Respect des inter-tombes", o1_2_d:"Vérification des distances légales (30 à 50 cm) entre fosses, garantie uniquement par un plan de très haute précision.",
+    o1_2_legale:"<b>Base légale</b>, Art. R.2223-3 et 4 CGCT", o1_2_delai:"<b>Délai</b>, à vérifier avant chaque nouvelle inhumation", o1_2_ctrl:"<b>Contrôle</b>, Préfet, juge administratif",
+    o1_3_shot:"Emplacement capture, constat de reprise de concession", o1_3_t:"Reprise des concessions abandonnées", o1_3_d:"Identification graphique des sépultures en état d'abandon lors des constats officiels de la procédure de reprise.",
+    o1_3_legale:"<b>Base légale</b>, Procédure CGCT et jurisprudence administrative", o1_3_delai:"<b>Délai</b>, procédure triennale (constats sur 3 ans consécutifs)", o1_3_ctrl:"<b>Contrôle</b>, Préfet, tribunal administratif",
+    t2_eyebrow:"Sécurité publique &amp; risques", t2_h2:"Protégez votre commune et assurez votre tranquillité", t2_sub:"Le Plan Communal de Sauvegarde (PCS) et la gestion de la Défense Extérieure Contre l'Incendie (DECI) sont les piliers de votre capacité de réponse face aux imprévus. Nous vous aidons à structurer ces documents essentiels pour que vous puissiez agir avec sérénité et réactivité, tout en répondant pleinement aux exigences réglementaires qui incombent à la mairie.",
+    o2_1_shot:"Emplacement capture, carte opérationnelle PCS", o2_1_t:"Plan Communal de Sauvegarde (PCS)", o2_1_d:"Cartes opérationnelles pour les secours : itinéraires d'évacuation, populations vulnérables, centres d'hébergement.",
+    o2_1_legale:"<b>Base légale</b>, Loi du 13/08/2004 (modernisation de la sécurité civile)", o2_1_delai:"<b>Délai</b>, immédiat si commune à risque, révision quinquennale", o2_1_ctrl:"<b>Contrôle</b>, Préfet (SIDPC)",
+    o2_2_shot:"Emplacement capture, carte des points d'eau incendie", o2_2_t:"Règlement DECI (points d'eau incendie)", o2_2_d:"Géolocalisation et suivi de disponibilité de tous vos points d'eau incendie, transmis aux services de secours.",
+    o2_2_legale:"<b>Base légale</b>, Art. L.2213-32 CGCT (réforme 2015)", o2_2_delai:"<b>Délai</b>, mise en conformité RDDECI sous 3 à 6 ans", o2_2_ctrl:"<b>Contrôle</b>, SDIS, Préfet (arrêté DECI)",
+    t3_eyebrow:"Urbanisme &amp; adressage", t3_h2:"Consolidez vos actes d'urbanisme et certifiez vos adresses.", t3_sub:"Deux obligations souvent sous-estimées, mais qui conditionnent directement les autorisations d'urbanisme et l'arrivée des secours.",
+    o3_1_shot:"Emplacement capture, PLU/carte communale sur le Géoportail de l'Urbanisme", o3_1_t:"Géoportail de l'Urbanisme (GPU)", o3_1_d:"Numérisation aux standards nationaux CNIG pour rendre votre PLU ou carte communale exécutoire et opposable.",
+    o3_1_legale:"<b>Base légale</b>, Art. L.133-1 Code de l'urbanisme", o3_1_delai:"<b>Délai</b>, publication immédiate dès l'approbation", o3_1_ctrl:"<b>Contrôle</b>, Préfet, CNIG",
+    o3_2_shot:"Emplacement capture, plan de la Base Adresse Locale", o3_2_t:"Base Adresse Locale (BAL)", o3_2_d:"Répertoriage, nommage et géolocalisation de toutes vos voies et adresses pour alimenter la Base Adresse Nationale.",
+    o3_2_legale:"<b>Base légale</b>, Loi 3DS (2022)", o3_2_delai:"<b>Délai</b>, obligatoire, mise à jour continue", o3_2_ctrl:"<b>Contrôle</b>, ANCT / IGN, DGCL",
+    t4_eyebrow:"Voirie", t4_h2:"Un tracé et un statut juridique à jour, à tout moment",
+    o4_1_shot:"Emplacement capture, plan de circulation et arrêtés de voirie", o4_1_t:"Plans de circulation et arrêtés de voirie", o4_1_d:"Cartographie de la réglementation du trafic, du stationnement et des limitations de tonnage.",
+    o4_1_legale:"<b>Base légale</b>, Art. L.2213-1 CGCT", o4_1_delai:"<b>Délai</b>, publication et affichage avant entrée en vigueur", o4_1_ctrl:"<b>Contrôle</b>, Préfet, tribunal administratif",
+    o4_2_shot:"Emplacement capture, tableau de classement de la voirie", o4_2_t:"Tableau de classement de la voirie communale", o4_2_d:"Statut juridique et tracé à jour des voies communales et chemins ruraux, indispensable en cas de vente ou d'aliénation.",
+    o4_2_legale:"<b>Base légale</b>, Code de la voirie routière", o4_2_delai:"<b>Délai</b>, mise à jour à chaque modification du réseau", o4_2_ctrl:"<b>Contrôle</b>, Préfet",
+    t5_eyebrow:"Eau &amp; assainissement", t5_h2:"Des zonages qui conditionnent vos autorisations d'urbanisme",
+    o5_1_shot:"Emplacement capture, zonage d'assainissement", o5_1_t:"Zonage d'assainissement &amp; zonage pluvial", o5_1_d:"Délimitation des secteurs collectifs et non collectifs, et cartographie de gestion des eaux pluviales.",
+    o5_1_legale:"<b>Base légale</b>, Art. L.2224-10 CGCT", o5_1_delai:"<b>Délai</b>, avant tout document d'urbanisme, mise à jour périodique", o5_1_ctrl:"<b>Contrôle</b>, SPANC, Agence de l'eau, DDT(M)",
+    o5_2_shot:"Emplacement capture, périmètre de protection de captage", o5_2_t:"Périmètres de protection des captages", o5_2_d:"Délimitation de la Déclaration d'Utilité Publique autour de vos points de prélèvement d'eau potable.",
+    o5_2_legale:"<b>Base légale</b>, Code de la santé publique", o5_2_delai:"<b>Délai</b>, révision périodique de la DUP", o5_2_ctrl:"<b>Contrôle</b>, ARS",
+    o5_3_shot:"Emplacement capture, cadastre et RPCU à jour", o5_3_t:"Cadastre, RPCU &amp; PCI vecteur", o5_3_d:"Gestion du domaine public/privé et mise à jour parcellaire continue, en lien avec la DGFIP.",
+    o5_3_legale:"<b>Base légale</b>, Code général des impôts", o5_3_delai:"<b>Délai</b>, mise à jour continue", o5_3_ctrl:"<b>Contrôle</b>, DGFIP / DDFIP",
+    cta_title:"Une obligation cartographique à régulariser ?", cta_sub:"Décrivez votre situation, nous vous indiquons ce qui est réellement urgent et ce qui peut attendre.", cta_btn:"Nous contacter",
+    ftr_h_solutions:"Solutions", ftr_h_expertise:"Expertises", ftr_h_company:"Entreprise", ftr_h_contact:"Contact",
+    ftr_desc:"Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.",
+    ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"
+  },
+  en: {
+    nav_about:"About us", nav_solutions:"Solutions", nav_sol_mairie:"Municipalities", nav_sol_epci:"Inter-municipal bodies", nav_sol_etat:"State &amp; Institutions", nav_sol_ong:"NGOs &amp; Associations", nav_sol_prive:"Private companies",
+    nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_contact:"Contact us", nav_legal:"Legal notice",
+    bc_home:"Home", eyebrow:"Solutions for municipalities",
+    h1:'<span class="h1-ico"><video autoplay loop muted playsinline><source src="assets/videos/hotel-de-ville.mp4" type="video/mp4"></video></span>You are a Municipality',
+    lead:"Addressing, planning, roads, water, fire defence, cemetery: real obligations. Here, theme by theme, is what the law requires and how we turn it into a plan, a map or a usable database.",
+    class1:"Rural municipality", class2:"Urban municipality", class3:"Delegated town", class4:"New commune (merged)",
+    jump1:"🚨 Public safety &amp; risks", jump2:"🗺️ Planning &amp; addressing", jump3:"🛣️ Roads", jump4:"💧 Water &amp; sanitation", jump5:"⚰️ Funerary &amp; cemeteries",
+    intro_eyebrow:"Our approach", intro_h2:"Simplify your daily work, secure your files",
+    intro_p1:"Running a town hall demands exemplary versatility across civil registry, planning, the cemetery and roads. To free you from technical constraints, we turn your data into ready-to-use documents.",
+    intro_p2:"We produce deliverables that meet the expectations of the prefecture, the fire department and the ANCT, without you having to train on complex GIS tools. Every engagement includes the necessary plans, structured data and personalised support, so you can get up and running immediately and with full confidence.",
+    ph_intro:"Image placeholder, town hall / elected official and municipal plan",
+    t1_eyebrow:"Funerary &amp; cemeteries", t1_h2:"The cemetery, a public space under strict legal requirements", t1_sub:"Ensure calm, compliant management of funeral policing",
+    o1_1_shot:"Image placeholder, cemetery sectoring plan", o1_1_t:"Cemetery sectoring", o1_1_d:"Centimetre-accurate plan distinguishing common ground, paid plots and the cremation area, in line with cemetery regulations.",
+    o1_1_legale:"<b>Legal basis</b>, Art. L.2223-1 of the General Local Authorities Code", o1_1_delai:"<b>Deadline</b>, ongoing, upon any development or extension", o1_1_ctrl:"<b>Oversight</b>, Prefect, administrative court",
+    o1_2_shot:"Image placeholder, inter-grave distance survey", o1_2_t:"Inter-grave distances", o1_2_d:"Verification of the legal distances (30 to 50 cm) between graves, only guaranteed by a very high-precision plan.",
+    o1_2_legale:"<b>Legal basis</b>, Art. R.2223-3 and 4 of the Local Authorities Code", o1_2_delai:"<b>Deadline</b>, to be checked before every new burial", o1_2_ctrl:"<b>Oversight</b>, Prefect, administrative judge",
+    o1_3_shot:"Image placeholder, record of plot reclamation", o1_3_t:"Reclamation of abandoned burial plots", o1_3_d:"Graphic identification of plots in a state of abandonment during the official reclamation procedure inspections.",
+    o1_3_legale:"<b>Legal basis</b>, Local Authorities Code procedure and case law", o1_3_delai:"<b>Deadline</b>, three-year procedure (inspections over 3 consecutive years)", o1_3_ctrl:"<b>Oversight</b>, Prefect, administrative court",
+    t2_eyebrow:"Public safety &amp; risks", t2_h2:"Protect your municipality and secure your peace of mind", t2_sub:"The Municipal Emergency Plan (PCS) and the management of External Fire Defence (DECI) are the pillars of your ability to respond to the unexpected. We help you structure these essential documents so you can act with confidence and speed, while fully meeting the regulatory requirements incumbent on the town hall.",
+    o2_1_shot:"Image placeholder, PCS operational map", o2_1_t:"Municipal Emergency Plan (PCS)", o2_1_d:"Operational maps for emergency services: evacuation routes, vulnerable populations, shelter centres.",
+    o2_1_legale:"<b>Legal basis</b>, Act of 13/08/2004 (civil security modernisation)", o2_1_delai:"<b>Deadline</b>, immediate if the municipality is at risk, five-year review", o2_1_ctrl:"<b>Oversight</b>, Prefect (SIDPC)",
+    o2_2_shot:"Image placeholder, fire-water point map", o2_2_t:"Fire-water defence regulation (DECI)", o2_2_d:"Geolocation and availability tracking of all your fire hydrants, shared with the emergency services.",
+    o2_2_legale:"<b>Legal basis</b>, Art. L.2213-32 of the Local Authorities Code (2015 reform)", o2_2_delai:"<b>Deadline</b>, compliance with the departmental DECI regulation within 3 to 6 years", o2_2_ctrl:"<b>Oversight</b>, Fire department, Prefect (DECI order)",
+    t3_eyebrow:"Planning &amp; addressing", t3_h2:"Strengthen your planning records and certify your addresses.", t3_sub:"Two often-underestimated obligations that directly condition planning permits and the arrival of emergency services.",
+    o3_1_shot:"Image placeholder, local plan on the National Planning Portal", o3_1_t:"National Planning Portal (GPU)", o3_1_d:"Digitisation to national CNIG standards to make your local plan enforceable and publicly opposable.",
+    o3_1_legale:"<b>Legal basis</b>, Art. L.133-1 of the Planning Code", o3_1_delai:"<b>Deadline</b>, immediate publication upon approval", o3_1_ctrl:"<b>Oversight</b>, Prefect, CNIG",
+    o3_2_shot:"Image placeholder, local address database plan", o3_2_t:"Local Address Database (BAL)", o3_2_d:"Listing, naming and geolocating all your streets and addresses to feed the National Address Database.",
+    o3_2_legale:"<b>Legal basis</b>, 3DS Act (2022)", o3_2_delai:"<b>Deadline</b>, mandatory, ongoing update", o3_2_ctrl:"<b>Oversight</b>, ANCT / IGN, DGCL",
+    t4_eyebrow:"Roads", t4_h2:"An up-to-date layout and legal status, at all times",
+    o4_1_shot:"Image placeholder, traffic plan and road orders", o4_1_t:"Traffic plans and road orders", o4_1_d:"Mapping of traffic regulations, parking and tonnage restrictions.",
+    o4_1_legale:"<b>Legal basis</b>, Art. L.2213-1 of the Local Authorities Code", o4_1_delai:"<b>Deadline</b>, publication and posting before entry into force", o4_1_ctrl:"<b>Oversight</b>, Prefect, administrative court",
+    o4_2_shot:"Image placeholder, municipal road classification table", o4_2_t:"Municipal road classification table", o4_2_d:"Up-to-date legal status and layout of municipal roads and rural tracks, essential in case of sale or transfer.",
+    o4_2_legale:"<b>Legal basis</b>, Road Code", o4_2_delai:"<b>Deadline</b>, updated at every network change", o4_2_ctrl:"<b>Oversight</b>, Prefect",
+    t5_eyebrow:"Water &amp; sanitation", t5_h2:"Zoning that conditions your planning permits",
+    o5_1_shot:"Image placeholder, sanitation zoning", o5_1_t:"Sanitation &amp; stormwater zoning", o5_1_d:"Delineation of collective and non-collective sectors, and stormwater management mapping.",
+    o5_1_legale:"<b>Legal basis</b>, Art. L.2224-10 of the Local Authorities Code", o5_1_delai:"<b>Deadline</b>, before any planning document, periodic update", o5_1_ctrl:"<b>Oversight</b>, Public sanitation service, Water Agency, DDT(M)",
+    o5_2_shot:"Image placeholder, catchment protection perimeter", o5_2_t:"Water catchment protection perimeters", o5_2_d:"Delineation of the Public Utility Declaration around your drinking water abstraction points.",
+    o5_2_legale:"<b>Legal basis</b>, Public Health Code", o5_2_delai:"<b>Deadline</b>, periodic review of the declaration", o5_2_ctrl:"<b>Oversight</b>, Regional Health Agency",
+    o5_3_shot:"Image placeholder, up-to-date land registry", o5_3_t:"Land registry &amp; parcel mapping", o5_3_d:"Management of public/private land ownership and continuous parcel updates, in coordination with the tax authority.",
+    o5_3_legale:"<b>Legal basis</b>, General Tax Code", o5_3_delai:"<b>Deadline</b>, continuous update", o5_3_ctrl:"<b>Oversight</b>, Tax authority (DGFIP/DDFIP)",
+    cta_title:"A mapping obligation to bring into compliance?", cta_sub:"Describe your situation, we'll tell you what's genuinely urgent and what can wait.", cta_btn:"Contact us",
+    ftr_h_solutions:"Solutions", ftr_h_expertise:"Expertise", ftr_h_company:"Company", ftr_h_contact:"Contact",
+    ftr_desc:"Independent expertise in geographic information systems, land surveying, network detection and web mapping. Based in Le Tampon, Réunion Island.",
+    ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"
+  }
+};
+</script>
+<script src="assets/main.js"></script>
+</body>
+</html>

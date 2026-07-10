@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /mentions-legales.html
+Disallow: /fond-demo.html
+Disallow: /fond-demo-incrustation.html
+Disallow: /logo-test-fond-noir.html
+
+Sitemap: https://www.geomark.fr/sitemap.xml

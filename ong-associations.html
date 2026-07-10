@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Solutions SIG pour les ONG &amp; Associations · Geomark SIG Solutions</title>
+<meta name="description" content="Cartographie de zones d'intervention, cartographie participative, reporting bailleurs de fonds : les traitements géographiques utiles aux ONG, associations et fondations, par Geomark SIG Solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="index.html"><img src="assets/images/logo-geomark.png" alt="Geomark SIG Solutions"></a>
+    <nav class="nav" id="nav">
+      <a href="qui-sommes-nous.html" data-i18n="nav_about">Qui sommes-nous ?</a>
+      <div class="nav-item-drop">
+        <button class="nav-drop-btn" type="button" data-i18n="nav_solutions">Solutions <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-drop-menu">
+          <a href="mairie.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21h18M4 21V10l8-6 8 6v11M9 21v-6h6v6"/></svg><span data-i18n="nav_sol_mairie">Mairies</span></a>
+          <a href="intercommunalite.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11 6.5 17M12 11l5.5 6"/></svg><span data-i18n="nav_sol_epci">Intercommunalités</span></a>
+          <a href="ecosysteme-etat.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/></svg><span data-i18n="nav_sol_etat">État &amp; Institutions</span></a>
+          <a href="ong-associations.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M2 20c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5"/><path d="M16 11a3 3 0 1 0 0-6"/><path d="M14.5 14.5c2.8.3 4.5 2.5 4.5 5.5"/></svg><span data-i18n="nav_sol_ong">ONG &amp; Associations</span></a>
+          <a href="prive.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg><span data-i18n="nav_sol_prive">Entreprises privées</span></a>
+        </div>
+      </div>
+      <a href="sig.html" data-i18n="nav_sig">SIG</a>
+      <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
+      <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
+      <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="contact.html" class="btn-nav" data-i18n="nav_contact">Nous contacter</a>
+    </nav>
+    <div class="hdr-right">
+      <div class="langsw"><button data-lang="fr" class="active">FR</button><button data-lang="en">EN</button></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<section class="phero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-i18n="bc_home">Accueil</a> / <span data-i18n="nav_sol_ong">ONG &amp; Associations</span></div>
+    <span class="eyebrow" data-i18n="eyebrow">Solutions pour l'intérêt général</span>
+    <h1 data-i18n="h1"><span class="h1-ico"><img src="assets/ngo.png" alt="ONG et associations"></span>Vous êtes une ONG ou une association</h1>
+    <p class="lead" data-i18n="lead">Association loi 1901, fondation, ONG humanitaire : votre budget est serré, vos financeurs veulent des preuves visuelles d'impact et votre terrain d'action dépend souvent de bénévoles. La cartographie n'est pas un gadget : c'est l'outil qui priorise l'action, prouve l'impact et convainc les bailleurs.</p>
+    <div class="chiprow">
+      <span class="chip" data-i18n="class1">Association loi 1901</span>
+      <span class="chip" data-i18n="class2">Fondation</span>
+      <span class="chip" data-i18n="class3">ONG humanitaire</span>
+      <span class="chip" data-i18n="class4">Association d'intérêt général</span>
+    </div>
+    <div class="jumprow">
+      <a href="#terrain" data-i18n="jump1">🗺️ Terrain &amp; intervention</a>
+      <a href="#plaidoyer" data-i18n="jump2">📢 Plaidoyer &amp; communication</a>
+      <a href="#reporting" data-i18n="jump3">📈 Reporting &amp; bailleurs de fonds</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="split-txt">
+        <span class="eyebrow" data-i18n="intro_eyebrow">Notre approche</span>
+        <h2 data-i18n="intro_h2">Convaincre avec une carte, pas seulement un tableau</h2>
+        <p data-i18n="intro_p1">Un rapport d'activité avec une carte parle plus vite qu'un tableau de chiffres, autant à un donateur particulier qu'à un comité de sélection de subventions.</p>
+        <p data-i18n="intro_p2">Nous adaptons le niveau technique et le tarif à la réalité associative : pas de solution surdimensionnée pour une structure qui fonctionne avec des bénévoles.</p>
+      </div>
+      <div class="split-media"><div class="ph-img auto"><img src="assets/images/asso.png" alt="Carte d'intervention associative, Geomark SIG Solutions"></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="thread">
+
+  <!-- Thème 01, Terrain & intervention -->
+  <section class="theme-block sec-line sec-gray" id="terrain">
+    <div class="wrap">
+      <div class="theme-node ico-blue">🗺️</div>
+      <div class="theme-head reveal">
+        <span class="eyebrow" data-i18n="t1_eyebrow">Terrain &amp; intervention</span>
+        <h2 class="htitle" data-i18n="t1_h2">Savoir où agir en priorité</h2>
+      </div>
+      <div class="obl-grid c2 reveal">
+
+        <div class="obl-card pv-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/zone.png" alt="Carte des zones d'intervention, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-blue emoji-ico">📍</div>
+            <h4 data-i18n="o1_1_t">Cartographie des zones d'intervention</h4>
+            <p data-i18n="o1_1_d">Délimitation précise des secteurs couverts par vos actions, pour affecter les bonnes ressources au bon endroit.</p>
+            <div class="obl-meta">
+              <div class="m avantage"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.3 1 2.1V15h6v-.4c0-.8.4-1.5 1-2.1A6 6 0 0 0 12 2Z"/></svg><span data-i18n="o1_1_avantage"><b>Avantage</b>, priorise l'affectation des bénévoles et des ressources sur le terrain</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obl-card pv-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/collecte.png" alt="Collecte de données participative terrain, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-blue emoji-ico">📲</div>
+            <h4 data-i18n="o1_2_t">Cartographie participative</h4>
+            <p data-i18n="o1_2_d">Collecte de données terrain par vos bénévoles via des applications simples (ODK, KoboToolbox), centralisée automatiquement.</p>
+            <div class="obl-meta">
+              <div class="m avantage"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.3 1 2.1V15h6v-.4c0-.8.4-1.5 1-2.1A6 6 0 0 0 12 2Z"/></svg><span data-i18n="o1_2_avantage"><b>Avantage</b>, implique la communauté et maintient une donnée à jour en continu</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Thème 02, Plaidoyer & communication -->
+  <section class="theme-block" id="plaidoyer">
+    <div class="wrap">
+      <div class="theme-node ico-orange">📢</div>
+      <div class="theme-head reveal">
+        <span class="eyebrow" data-i18n="t2_eyebrow">Plaidoyer &amp; communication</span>
+        <h2 class="htitle" data-i18n="t2_h2">Rendre votre cause visible et compréhensible</h2>
+      </div>
+      <div class="obl-grid c2 reveal">
+
+        <div class="obl-card pv-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/sensibilisation.png" alt="Web-SIG de sensibilisation publique, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-orange emoji-ico">🖥️</div>
+            <h4 data-i18n="o2_1_t">Web-SIG de sensibilisation publique</h4>
+            <p data-i18n="o2_1_d">Carte interactive publique racontant votre action, intégrable directement sur votre site ou vos réseaux.</p>
+            <div class="obl-meta">
+              <div class="m avantage"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.3 1 2.1V15h6v-.4c0-.8.4-1.5 1-2.1A6 6 0 0 0 12 2Z"/></svg><span data-i18n="o2_1_avantage"><b>Avantage</b>, renforce l'impact des campagnes de communication et de collecte de dons</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obl-card pv-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/vuln.png" alt="Cartographie de la vulnérabilité sociale, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-orange emoji-ico">🧭</div>
+            <h4 data-i18n="o2_2_t">Cartographie de la vulnérabilité sociale</h4>
+            <p data-i18n="o2_2_d">Croisement de données socio-démographiques pour identifier les zones et publics les plus fragiles.</p>
+            <div class="obl-meta">
+              <div class="m avantage"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.3 1 2.1V15h6v-.4c0-.8.4-1.5 1-2.1A6 6 0 0 0 12 2Z"/></svg><span data-i18n="o2_2_avantage"><b>Avantage</b>, cible plus précisément les populations à accompagner</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Thème 03, Reporting & bailleurs de fonds -->
+  <section class="theme-block sec-line sec-gray" id="reporting">
+    <div class="wrap">
+      <div class="theme-node ico-purple">📈</div>
+      <div class="theme-head reveal">
+        <span class="eyebrow" data-i18n="t3_eyebrow">Reporting &amp; bailleurs de fonds</span>
+        <h2 class="htitle" data-i18n="t3_h2">Prouver l'impact, pas seulement l'annoncer</h2>
+      </div>
+      <div class="obl-grid c2 reveal">
+
+        <div class="obl-card pv-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/suivi.png" alt="Suivi-évaluation de projets, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-purple emoji-ico">📊</div>
+            <h4 data-i18n="o3_1_t">Suivi-évaluation de projets</h4>
+            <p data-i18n="o3_1_d">Cartographie de l'avancement de vos projets terrain, actualisée pour vos comités de suivi et vos financeurs.</p>
+            <div class="obl-meta">
+              <div class="m avantage"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.3 1 2.1V15h6v-.4c0-.8.4-1.5 1-2.1A6 6 0 0 0 12 2Z"/></svg><span data-i18n="o3_1_avantage"><b>Avantage</b>, reporting visuel exigé par les bailleurs de fonds (fondations, collectivités, Union européenne)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obl-card pv-card">
+          <div class="ph-img auto obl-shot"><img src="assets/images/couverture.png" alt="Couverture territoriale d'intervention, Geomark SIG Solutions"></div>
+          <div class="obl-body">
+            <div class="obl-ico ico-purple emoji-ico">🗺️</div>
+            <h4 data-i18n="o3_2_t">Couverture territoriale d'intervention</h4>
+            <p data-i18n="o3_2_d">Vue d'ensemble démontrant l'étendue réelle de vos actions sur un territoire donné.</p>
+            <div class="obl-meta">
+              <div class="m avantage"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.3 1 2.1V15h6v-.4c0-.8.4-1.5 1-2.1A6 6 0 0 0 12 2Z"/></svg><span data-i18n="o3_2_avantage"><b>Avantage</b>, démontre la couverture réelle du territoire à vos partenaires financiers</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<section class="sec sec-line">
+  <div class="wrap">
+    <div class="ctaband reveal">
+      <div class="ctaband-tx">
+        <h2 data-i18n="cta_title">Un projet associatif à cartographier ?</h2>
+        <p data-i18n="cta_sub">Décrivez votre mission, nous adaptons la solution à votre budget.</p>
+      </div>
+      <div class="ctaband-btns">
+        <a href="contact.html" class="btn btn-orange" data-i18n="cta_btn">Nous contacter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ribbon-band">
+  <img class="ribbon-img" src="assets/images/ribbon-band.jpg" alt="Geomark SIG Solutions">
+</section>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <div>
+      <div class="ftr-brand"><img src="assets/images/logo-geomark.png" alt="Geomark"></div>
+      <p class="ftr-desc" data-i18n="ftr_desc">Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.</p>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_solutions">Solutions</div>
+      <a href="mairie.html" data-i18n="nav_sol_mairie">Mairies</a>
+      <a href="intercommunalite.html" data-i18n="nav_sol_epci">Intercommunalités</a>
+      <a href="ecosysteme-etat.html" data-i18n="nav_sol_etat">État &amp; Institutions</a>
+      <a href="ong-associations.html" data-i18n="nav_sol_ong">ONG &amp; Associations</a>
+      <a href="prive.html" data-i18n="nav_sol_prive">Entreprises privées</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_expertise">Expertises</div>
+      <a href="sig.html" data-i18n="nav_sig">SIG</a>
+      <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
+      <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
+      <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_company">Entreprise</div>
+      <a href="qui-sommes-nous.html" data-i18n="nav_about">Qui sommes-nous ?</a>
+      <a href="contact.html" data-i18n="nav_contact">Nous contacter</a>
+      <a href="mentions-legales.html" data-i18n="nav_legal">Mentions légales</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_contact">Contact</div>
+      <a href="mailto:societegeomark@gmail.com">societegeomark@gmail.com</a>
+      <a href="tel:+33613184710">+33 6 13 18 47 10</a>
+      <a href="tel:+262693616923">+262 6 93 61 69 23</a>
+      <a href="https://www.linkedin.com/in/robin-maume/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap ftr-bottom">
+    <span data-i18n="ftr_copy">© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013</span>
+    <span>21°16'S, 55°30'E · Le Tampon, La Réunion</span>
+  </div>
+  <div class="wrap ftr-bottom" style="border-top:none;padding-top:0;">
+    <a href="https://www.flaticon.com/free-icons/ngo" title="ngo icons" style="font-size:.68rem;color:rgba(255,255,255,.3);">Ngo icons created by syafii5758, Flaticon</a>
+  </div>
+</footer>
+
+<script>
+window.I18N = {
+  fr: {
+    nav_about:"Qui sommes-nous ?", nav_solutions:"Solutions", nav_sol_mairie:"Mairies", nav_sol_epci:"Intercommunalités", nav_sol_etat:"État &amp; Institutions", nav_sol_ong:"ONG &amp; Associations", nav_sol_prive:"Entreprises privées",
+    nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
+    bc_home:"Accueil", eyebrow:"Solutions pour l'intérêt général",
+    h1:'<span class="h1-ico"><img src="assets/ngo.png" alt="ONG et associations"></span>Vous êtes une ONG ou une association',
+    lead:"Association loi 1901, fondation, ONG humanitaire : votre budget est serré, vos financeurs veulent des preuves visuelles d'impact et votre terrain d'action dépend souvent de bénévoles. La cartographie n'est pas un gadget : c'est l'outil qui priorise l'action, prouve l'impact et convainc les bailleurs.",
+    class1:"Association loi 1901", class2:"Fondation", class3:"ONG humanitaire", class4:"Association d'intérêt général",
+    jump1:"🗺️ Terrain &amp; intervention", jump2:"📢 Plaidoyer &amp; communication", jump3:"📈 Reporting &amp; bailleurs de fonds",
+    intro_eyebrow:"Notre approche", intro_h2:"Convaincre avec une carte, pas seulement un tableau",
+    intro_p1:"Un rapport d'activité avec une carte parle plus vite qu'un tableau de chiffres, autant à un donateur particulier qu'à un comité de sélection de subventions.",
+    intro_p2:"Nous adaptons le niveau technique et le tarif à la réalité associative : pas de solution surdimensionnée pour une structure qui fonctionne avec des bénévoles.",
+    ph_intro:"Emplacement image, carte d'intervention associative",
+    t1_eyebrow:"Terrain &amp; intervention", t1_h2:"Savoir où agir en priorité",
+    o1_1_shot:"Emplacement capture, carte des zones d'intervention", o1_1_t:"Cartographie des zones d'intervention", o1_1_d:"Délimitation précise des secteurs couverts par vos actions, pour affecter les bonnes ressources au bon endroit.",
+    o1_1_avantage:"<b>Avantage</b>, priorise l'affectation des bénévoles et des ressources sur le terrain",
+    o1_2_shot:"Emplacement capture, collecte de données participative terrain", o1_2_t:"Cartographie participative", o1_2_d:"Collecte de données terrain par vos bénévoles via des applications simples (ODK, KoboToolbox), centralisée automatiquement.",
+    o1_2_avantage:"<b>Avantage</b>, implique la communauté et maintient une donnée à jour en continu",
+    t2_eyebrow:"Plaidoyer &amp; communication", t2_h2:"Rendre votre cause visible et compréhensible",
+    o2_1_shot:"Emplacement capture, carte publique de sensibilisation", o2_1_t:"Web-SIG de sensibilisation publique", o2_1_d:"Carte interactive publique racontant votre action, intégrable directement sur votre site ou vos réseaux.",
+    o2_1_avantage:"<b>Avantage</b>, renforce l'impact des campagnes de communication et de collecte de dons",
+    o2_2_shot:"Emplacement capture, carte de vulnérabilité sociale", o2_2_t:"Cartographie de la vulnérabilité sociale", o2_2_d:"Croisement de données socio-démographiques pour identifier les zones et publics les plus fragiles.",
+    o2_2_avantage:"<b>Avantage</b>, cible plus précisément les populations à accompagner",
+    t3_eyebrow:"Reporting &amp; bailleurs de fonds", t3_h2:"Prouver l'impact, pas seulement l'annoncer",
+    o3_1_shot:"Emplacement capture, carte de suivi-évaluation de projet", o3_1_t:"Suivi-évaluation de projets", o3_1_d:"Cartographie de l'avancement de vos projets terrain, actualisée pour vos comités de suivi et vos financeurs.",
+    o3_1_avantage:"<b>Avantage</b>, reporting visuel exigé par les bailleurs de fonds (fondations, collectivités, Union européenne)",
+    o3_2_shot:"Emplacement capture, carte de couverture territoriale", o3_2_t:"Couverture territoriale d'intervention", o3_2_d:"Vue d'ensemble démontrant l'étendue réelle de vos actions sur un territoire donné.",
+    o3_2_avantage:"<b>Avantage</b>, démontre la couverture réelle du territoire à vos partenaires financiers",
+    cta_title:"Un projet associatif à cartographier ?", cta_sub:"Décrivez votre mission, nous adaptons la solution à votre budget.", cta_btn:"Nous contacter",
+    ftr_h_solutions:"Solutions", ftr_h_expertise:"Expertises", ftr_h_company:"Entreprise", ftr_h_contact:"Contact",
+    ftr_desc:"Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.",
+    ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"
+  },
+  en: {
+    nav_about:"About us", nav_solutions:"Solutions", nav_sol_mairie:"Municipalities", nav_sol_epci:"Inter-municipal bodies", nav_sol_etat:"State &amp; Institutions", nav_sol_ong:"NGOs &amp; Associations", nav_sol_prive:"Private companies",
+    nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_contact:"Contact us", nav_legal:"Legal notice",
+    bc_home:"Home", eyebrow:"Solutions for the public good",
+    h1:'<span class="h1-ico"><img src="assets/ngo.png" alt="NGOs and associations"></span>You are an NGO or an association',
+    lead:"Non-profit association, foundation, humanitarian NGO: your budget is tight, your funders want visual proof of impact, and your fieldwork often depends on volunteers. Mapping isn't a gadget: it's the tool that prioritises action, proves impact and convinces funders.",
+    class1:"Non-profit association", class2:"Foundation", class3:"Humanitarian NGO", class4:"Public-interest association",
+    jump1:"🗺️ Field &amp; intervention", jump2:"📢 Advocacy &amp; communication", jump3:"📈 Reporting &amp; funders",
+    intro_eyebrow:"Our approach", intro_h2:"Convince with a map, not just a spreadsheet",
+    intro_p1:"An activity report with a map speaks faster than a table of figures, to an individual donor as much as to a grant selection committee.",
+    intro_p2:"We match the technical level and the price to the reality of your association: no oversized solution for a structure that runs on volunteers.",
+    ph_intro:"Image placeholder, association field-intervention map",
+    t1_eyebrow:"Field &amp; intervention", t1_h2:"Knowing where to act first",
+    o1_1_shot:"Image placeholder, intervention zone map", o1_1_t:"Intervention zone mapping", o1_1_d:"Precise delineation of the sectors covered by your actions, to allocate the right resources to the right place.",
+    o1_1_avantage:"<b>Benefit</b>, prioritises the allocation of volunteers and resources on the ground",
+    o1_2_shot:"Image placeholder, participatory field data collection", o1_2_t:"Participatory mapping", o1_2_d:"Field data collection by your volunteers via simple apps (ODK, KoboToolbox), centralised automatically.",
+    o1_2_avantage:"<b>Benefit</b>, involves the community and keeps data continuously up to date",
+    t2_eyebrow:"Advocacy &amp; communication", t2_h2:"Making your cause visible and understandable",
+    o2_1_shot:"Image placeholder, public awareness map", o2_1_t:"Public awareness Web-GIS", o2_1_d:"Public interactive map telling the story of your action, embeddable directly on your website or social media.",
+    o2_1_avantage:"<b>Benefit</b>, boosts the impact of communication and fundraising campaigns",
+    o2_2_shot:"Image placeholder, social vulnerability map", o2_2_t:"Social vulnerability mapping", o2_2_d:"Cross-referencing socio-demographic data to identify the most fragile areas and audiences.",
+    o2_2_avantage:"<b>Benefit</b>, more precisely targets the populations who need support",
+    t3_eyebrow:"Reporting &amp; funders", t3_h2:"Proving impact, not just claiming it",
+    o3_1_shot:"Image placeholder, project monitoring & evaluation map", o3_1_t:"Project monitoring &amp; evaluation", o3_1_d:"Mapping of your field project's progress, updated for your steering committees and funders.",
+    o3_1_avantage:"<b>Benefit</b>, visual reporting required by funders (foundations, local authorities, the European Union)",
+    o3_2_shot:"Image placeholder, territorial coverage map", o3_2_t:"Territorial intervention coverage", o3_2_d:"An overview demonstrating the real extent of your actions across a given territory.",
+    o3_2_avantage:"<b>Benefit</b>, demonstrates real territorial coverage to your financial partners",
+    cta_title:"An association project to map?", cta_sub:"Describe your mission, we'll adapt the solution to your budget.", cta_btn:"Contact us",
+    ftr_h_solutions:"Solutions", ftr_h_expertise:"Expertise", ftr_h_company:"Company", ftr_h_contact:"Contact",
+    ftr_desc:"Independent expertise in geographic information systems, land surveying, network detection and web mapping. Based in Le Tampon, Réunion Island.",
+    ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"
+  }
+};
+</script>
+<script src="assets/main.js"></script>
+</body>
+</html>

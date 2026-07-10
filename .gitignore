@@ -1,0 +1,12 @@
+# Fichiers système Windows
+desktop.ini
+Thumbs.db
+
+# Configuration locale de l'outil (Claude Code)
+.claude/
+
+# Scripts de génération d'assets (usage local uniquement)
+assets/_make_mark2.py
+assets/_make_mark3.py
+assets/_test_bg.py
+assets/_test_on_navy.png
