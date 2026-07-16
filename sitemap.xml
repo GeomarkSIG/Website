@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.geomark-sig.fr/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.geomark-sig.fr/qui-sommes-nous.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.geomark-sig.fr/sig.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.geomark-sig.fr/topographie.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.geomark-sig.fr/detection-reseau.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.geomark-sig.fr/webmapping.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.geomark-sig.fr/mairie.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.geomark-sig.fr/intercommunalite.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.geomark-sig.fr/ecosysteme-etat.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.geomark-sig.fr/ong-associations.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.geomark-sig.fr/prive.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.geomark-sig.fr/contact.html</loc><priority>0.6</priority></url>
+  <url><loc>https://geomark-sig.fr/</loc><priority>1.0</priority></url>
+  <url><loc>https://geomark-sig.fr/qui-sommes-nous.html</loc><priority>0.8</priority></url>
+  <url><loc>https://geomark-sig.fr/sig.html</loc><priority>0.8</priority></url>
+  <url><loc>https://geomark-sig.fr/topographie.html</loc><priority>0.8</priority></url>
+  <url><loc>https://geomark-sig.fr/detection-reseau.html</loc><priority>0.8</priority></url>
+  <url><loc>https://geomark-sig.fr/webmapping.html</loc><priority>0.8</priority></url>
+  <url><loc>https://geomark-sig.fr/mairie.html</loc><priority>0.7</priority></url>
+  <url><loc>https://geomark-sig.fr/intercommunalite.html</loc><priority>0.7</priority></url>
+  <url><loc>https://geomark-sig.fr/ecosysteme-etat.html</loc><priority>0.7</priority></url>
+  <url><loc>https://geomark-sig.fr/ong-associations.html</loc><priority>0.7</priority></url>
+  <url><loc>https://geomark-sig.fr/prive.html</loc><priority>0.7</priority></url>
+  <url><loc>https://geomark-sig.fr/contact.html</loc><priority>0.6</priority></url>
 </urlset>
