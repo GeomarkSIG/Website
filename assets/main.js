@@ -56,4 +56,60 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('fNote').classList.add('show');
   });
 
+  /* cookie consent (RGPD) + Google Analytics, chargé uniquement après accord */
+  const GA_ID = 'G-1R683QQMPG';
+  function loadGA() {
+    if (window.gtag) return;
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  }
+
+  const cookieTexts = {
+    fr: {
+      txt: 'Ce site utilise Google Analytics pour mesurer l\'audience (statistiques de visite). Ces cookies ne sont déposés qu\'avec votre accord. <a href="mentions-legales.html#cookies">En savoir plus</a>.',
+      refuse: 'Refuser', accept: 'Accepter'
+    },
+    en: {
+      txt: 'This site uses Google Analytics to measure audience (visit statistics). These cookies are only set with your consent. <a href="mentions-legales.html#cookies">Learn more</a>.',
+      refuse: 'Decline', accept: 'Accept'
+    }
+  };
+
+  window.gmOpenCookieBanner = function () {
+    document.getElementById('cookieBanner')?.remove();
+    const lang = localStorage.getItem('gm_lang') || 'fr';
+    const t = cookieTexts[lang] || cookieTexts.fr;
+    const banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.id = 'cookieBanner';
+    banner.innerHTML =
+      '<div class="cookie-banner-in">' +
+        '<p class="cookie-banner-txt">' + t.txt + '</p>' +
+        '<div class="cookie-banner-btns">' +
+          '<button type="button" class="btn btn-outline-l" id="cookieRefuse">' + t.refuse + '</button>' +
+          '<button type="button" class="btn btn-orange" id="cookieAccept">' + t.accept + '</button>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(banner);
+    document.getElementById('cookieAccept').addEventListener('click', () => {
+      localStorage.setItem('gm_cookie_consent', 'accepted');
+      banner.remove();
+      loadGA();
+    });
+    document.getElementById('cookieRefuse').addEventListener('click', () => {
+      localStorage.setItem('gm_cookie_consent', 'refused');
+      banner.remove();
+    });
+  };
+
+  const consent = localStorage.getItem('gm_cookie_consent');
+  if (consent === 'accepted') loadGA();
+  else if (consent !== 'refused') window.gmOpenCookieBanner();
+
 });
