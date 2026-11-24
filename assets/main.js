@@ -41,6 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = el.getAttribute('data-i18n');
       if (dict && dict[key] !== undefined) el.innerHTML = dict[key];
     });
+    document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+      const dict = window.I18N && window.I18N[lang];
+      const key = el.getAttribute('data-i18n-ph');
+      if (dict && dict[key] !== undefined) el.placeholder = dict[key];
+    });
     langBtns.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
     document.documentElement.lang = lang;
     localStorage.setItem('gm_lang', lang);
@@ -49,12 +54,38 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.I18N) applyLang(saved);
   langBtns.forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
 
-  /* contact form (static test page, no backend) */
+  /* contact form : envoi via FORM_ENDPOINT (service tiers) ou, à défaut, via la messagerie de l'utilisateur (mailto) */
+  const FORM_ENDPOINT = '';            // ex. 'https://formspree.io/f/xxxxxxxx' : laisser vide = mode mailto
+  const MAIL_TO = 'contact@geomark-sig.fr';
   const ctForm = document.getElementById('ctForm');
-  if (ctForm) ctForm.addEventListener('submit', e => {
-    e.preventDefault();
-    document.getElementById('fNote').classList.add('show');
-  });
+  if (ctForm) {
+    const note = document.getElementById('fNote');
+    const say = (key, isErr) => {
+      const lang = localStorage.getItem('gm_lang') || 'fr';
+      const dict = (window.I18N && (window.I18N[lang] || window.I18N.fr)) || {};
+      note.textContent = dict[key] || '';
+      note.classList.toggle('err', !!isErr);
+      note.classList.add('show');
+    };
+    ctForm.addEventListener('submit', async e => {
+      e.preventDefault();
+      if (ctForm.website && ctForm.website.value) return;            // honeypot anti-spam
+      if (!ctForm.checkValidity()) { ctForm.reportValidity(); say('f_note_inv', true); return; }
+      const f = new FormData(ctForm);
+      if (FORM_ENDPOINT) {
+        try {
+          const r = await fetch(FORM_ENDPOINT, { method: 'POST', body: f, headers: { Accept: 'application/json' } });
+          if (!r.ok) throw new Error('http ' + r.status);
+          ctForm.reset(); say('f_note_ok', false);
+        } catch (err) { say('f_note_err', true); }
+      } else {
+        const subject = '[Site Geomark] ' + f.get('subject') + ' - ' + f.get('name');
+        const body = f.get('message') + '\n\n' + f.get('name') + '\n' + f.get('email');
+        window.location.href = 'mailto:' + MAIL_TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        say('f_note_mail', false);
+      }
+    });
+  }
 
   /* cookie consent (RGPD) + Google Analytics, chargé uniquement après accord */
   const GA_ID = 'G-1R683QQMPG';

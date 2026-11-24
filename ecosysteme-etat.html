@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="assets/logo-mark-geomark.png">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://data.geopf.fr https://unpkg.com https://*.google-analytics.com https://*.googletagmanager.com; media-src 'self'; connect-src 'self' https://formspree.io https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; frame-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://geomark-sig.fr/ecosysteme-etat.html">
 <meta property="og:site_name" content="Geomark SIG">
 <meta property="og:image" content="https://geomark-sig.fr/assets/images/og-image.png">
@@ -37,6 +39,7 @@
       <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
       <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
       <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="jumeau-numerique.html" data-i18n="nav_twin">Jumeau numérique</a>
       <a href="contact.html" class="btn-nav" data-i18n="nav_contact">Nous contacter</a>
     </nav>
     <div class="hdr-right">
@@ -51,7 +54,7 @@
     <div class="breadcrumb"><a href="index.html" data-i18n="bc_home">Accueil</a> / <span data-i18n="nav_sol_etat">État &amp; Institutions</span></div>
     <span class="eyebrow" data-i18n="eyebrow">Solutions pour l'État, les Départements et les Régions</span>
     <h1 data-i18n="h1"><span class="h1-ico"><img src="assets/icons/france.svg" alt="État français"></span>Vous êtes une institution</h1>
-    <p class="lead" data-i18n="lead">Préfecture, DDT(M), DREAL, Conseil départemental, Conseil régional, opérateurs publics, commissions : vous pilotez ou contrôlez des obligations cartographiques qui dépassent l'échelle communale, prévention des risques, énergie, biodiversité, ouverture des données. Nous produisons la donnée de référence sur laquelle ces politiques s'appuient.</p>
+    <p class="lead" data-i18n="lead">Préfecture, DDT(M), DREAL, Conseil départemental, Conseil régional, opérateurs publics, commissions : vous pilotez ou contrôlez des obligations cartographiques qui dépassent l'échelle communale : prévention des risques, énergie, biodiversité, ouverture des données. Nous produisons la donnée de référence sur laquelle ces politiques s'appuient.</p>
     <div class="chiprow">
       <span class="chip" data-i18n="class1">État déconcentré</span>
       <span class="chip" data-i18n="class2">Département</span>
@@ -260,7 +263,7 @@
     <div class="ctaband reveal">
       <div class="ctaband-tx">
         <h2 data-i18n="cta_title">Un référentiel cartographique à produire ou fiabiliser ?</h2>
-        <p data-i18n="cta_sub">Décrivez votre politique publique, nous vous proposons la méthode de production adaptée.</p>
+        <p data-i18n="cta_sub">Décrivez votre politique publique, nous vous proposons la méthode de production adaptée. Devis sous 48 h.</p>
       </div>
       <div class="ctaband-btns">
         <a href="contact.html" class="btn btn-orange" data-i18n="cta_btn">Nous contacter</a>
@@ -293,6 +296,7 @@
       <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
       <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
       <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="jumeau-numerique.html" data-i18n="nav_twin">Jumeau numérique</a>
     </div>
     <div class="ftr-col">
       <div class="ftr-h" data-i18n="ftr_h_company">Entreprise</div>
@@ -305,7 +309,7 @@
       <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>
       <a href="tel:+33613184710">+33 6 13 18 47 10</a>
       <a href="tel:+262693616923">+262 6 93 61 69 23</a>
-      <a href="https://www.linkedin.com/in/robin-maume/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/company/geomark-sig/" target="_blank">LinkedIn</a>
     </div>
   </div>
   <div class="wrap ftr-bottom">
@@ -318,45 +322,45 @@
 window.I18N = {
   fr: {
     nav_about:"Qui sommes-nous ?", nav_solutions:"Solutions", nav_sol_mairie:"Mairies", nav_sol_epci:"Intercommunalités", nav_sol_etat:"État &amp; Institutions", nav_sol_ong:"ONG &amp; Associations", nav_sol_prive:"Entreprises privées",
-    nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
+    nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_twin:"Jumeau numérique", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
     bc_home:"Accueil", eyebrow:"Solutions pour l'État, les Départements et les Régions",
     h1:'<span class="h1-ico"><img src="assets/icons/france.svg" alt="État français"></span>Vous êtes une institution',
-    lead:"Préfecture, DDT(M), DREAL, Conseil départemental, Conseil régional, opérateurs publics, commissions : vous pilotez ou contrôlez des obligations cartographiques qui dépassent l'échelle communale, prévention des risques, énergie, biodiversité, ouverture des données. Nous produisons la donnée de référence sur laquelle ces politiques s'appuient.",
+    lead:"Préfecture, DDT(M), DREAL, Conseil départemental, Conseil régional, opérateurs publics, commissions : vous pilotez ou contrôlez des obligations cartographiques qui dépassent l'échelle communale : prévention des risques, énergie, biodiversité, ouverture des données. Nous produisons la donnée de référence sur laquelle ces politiques s'appuient.",
     class1:"État déconcentré", class2:"Département", class3:"Région", class4:"Opérateurs publics", class5:"Commissions",
     jump0:"🧭 L'écosystème institutionnel", jump1:"⚠️ Risques &amp; prévention", jump2:"🌿 Énergie &amp; biodiversité", jump3:"📊 Numérique &amp; Open Data",
     intro_eyebrow:"Notre approche", intro_h2:"Fiabiliser la donnée que vous transmettez aux communes",
     intro_p1:"Les obligations pilotées à l'échelle de l'État ou des grandes collectivités (PPR, DFCI, ZAEnR, INSPIRE...) ont un point commun : elles doivent ensuite être reprises, sans erreur, par des dizaines de communes et d'EPCI qui n'ont pas toujours l'expertise SIG pour les vérifier.",
     intro_p2:"Nous produisons ou contrôlons cette donnée de référence (cartographie technique, mise en conformité CNIG, préparation des flux INSPIRE) pour qu'elle soit directement réutilisable en aval.",
-    ph_intro:"Emplacement image, cartographie institutionnelle / porter à connaissance",
+ 
     eco_eyebrow:"Qui est concerné", eco_title:"Un écosystème à trois niveaux", eco_sub:"Ce périmètre couvre aussi bien les services de l'État sur le terrain que les grands opérateurs publics et les commissions de contrôle.",
     eco1_t:"Services déconcentrés", eco1_d:"Préfecture, DDT(M), DREAL, ARS, SDIS, DGFIP : les relais territoriaux de l'État qui élaborent et contrôlent les documents de référence.",
     eco2_t:"Opérateurs publics &amp; parapublics", eco2_d:"Opérateurs télécoms (déploiement 5G/fibre), gestionnaires de réseaux d'énergie, France Travail, bailleurs sociaux : des besoins géographiques propres à leurs missions de service public.",
     eco3_t:"Commissions &amp; organismes de contrôle", eco3_d:"CADA, CNIG, GEODERIS, Comité régional de l'énergie : les instances qui valident la conformité ou arbitrent les recours.",
     t1_eyebrow:"Risques &amp; prévention", t1_h2:"Une donnée de risque fiable, transmise à tout le territoire", t1_sub:"Ces documents, élaborés par l'État, s'imposent ensuite aux communes via leurs documents d'urbanisme.",
-    o1_1_shot:"Emplacement capture, zonage PPRn / PPRt / PAPI", o1_1_t:"Plans de Prévention des Risques (PPRn, PPRt, PAPI)", o1_1_d:"Cartographie des zones d'aléa (inondation, incendie, retrait-gonflement des argiles) annexée aux documents d'urbanisme.",
+ o1_1_t:"Plans de Prévention des Risques (PPRn, PPRt, PAPI)", o1_1_d:"Cartographie des zones d'aléa (inondation, incendie, retrait-gonflement des argiles) annexée aux documents d'urbanisme.",
     o1_1_legale:"<b>Base légale</b>, Code de l'environnement", o1_1_delai:"<b>Délai</b>, annexion obligatoire dès l'approbation du PPR", o1_1_ctrl:"<b>Contrôle</b>, Préfet, DDT",
-    o1_2_shot:"Emplacement capture, pistes DFCI et coupures de combustible", o1_2_t:"DFCI (massifs à risque incendie)", o1_2_d:"Cartographie des pistes d'accès, coupures de combustible et points d'eau dans les massifs classés à risque.",
+ o1_2_t:"DFCI (massifs à risque incendie)", o1_2_d:"Cartographie des pistes d'accès, coupures de combustible et points d'eau dans les massifs classés à risque.",
     o1_2_legale:"<b>Base légale</b>, Code forestier", o1_2_delai:"<b>Délai</b>, débroussaillement et mise à jour annuels", o1_2_ctrl:"<b>Contrôle</b>, DDTM, Préfet, SDIS",
-    o1_3_shot:"Emplacement capture, cartographie des cavités et risques miniers", o1_3_t:"Anciennes carrières &amp; risques miniers", o1_3_d:"Cartographie des cavités souterraines et zones d'affaissement à porter à connaissance des communes concernées.",
+ o1_3_t:"Anciennes carrières &amp; risques miniers", o1_3_d:"Cartographie des cavités souterraines et zones d'affaissement à porter à connaissance des communes concernées.",
     o1_3_legale:"<b>Base légale</b>, Code minier", o1_3_delai:"<b>Délai</b>, intégré à chaque document d'urbanisme", o1_3_ctrl:"<b>Contrôle</b>, GEODERIS, DREAL",
     t2_eyebrow:"Énergie &amp; biodiversité", t2_h2:"Coordonner Département, Région et communes",
-    o2_1_shot:"Emplacement capture, zonage des Zones d'Accélération des ENR", o2_1_t:"Zones d'Accélération des ENR (ZAEnR)", o2_1_d:"Cartographie des zones prioritaires pour l'implantation de projets d'énergies renouvelables, transmise aux communes.",
+ o2_1_t:"Zones d'Accélération des ENR (ZAEnR)", o2_1_d:"Cartographie des zones prioritaires pour l'implantation de projets d'énergies renouvelables, transmise aux communes.",
     o2_1_legale:"<b>Base légale</b>, Loi APER (2023)", o2_1_delai:"<b>Délai</b>, transmission en continu au référent préfectoral", o2_1_ctrl:"<b>Contrôle</b>, Préfet, Comité régional de l'énergie",
-    o2_2_shot:"Emplacement capture, Schéma Régional de Cohérence Écologique", o2_2_t:"SRCE (cadre régional de la Trame Verte et Bleue)", o2_2_d:"Référentiel régional de biodiversité auquel doivent se conformer les PLU et SCoT du territoire.",
+ o2_2_t:"SRCE (cadre régional de la Trame Verte et Bleue)", o2_2_d:"Référentiel régional de biodiversité auquel doivent se conformer les PLU et SCoT du territoire.",
     o2_2_legale:"<b>Base légale</b>, Code de l'environnement", o2_2_delai:"<b>Délai</b>, révision alignée sur le SRADDET régional", o2_2_ctrl:"<b>Contrôle</b>, DREAL",
     t3_eyebrow:"Numérique &amp; Open Data", t3_h2:"Rendre la donnée publique interopérable",
-    o3_1_shot:"Emplacement capture, catalogue de métadonnées INSPIRE", o3_1_t:"Directive INSPIRE", o3_1_d:"Interopérabilité et accessibilité de toutes les données géographiques environnementales via des flux standards (WMS, WFS).",
+ o3_1_t:"Directive INSPIRE", o3_1_d:"Interopérabilité et accessibilité de toutes les données géographiques environnementales via des flux standards (WMS, WFS).",
     o3_1_legale:"<b>Base légale</b>, Directive 2007/2/CE", o3_1_delai:"<b>Délai</b>, catalogage et mise à jour continue des métadonnées", o3_1_ctrl:"<b>Contrôle</b>, Commission européenne",
-    o3_2_shot:"Emplacement capture, portail Open Data collectivité", o3_2_t:"Open Data (Loi République Numérique)", o3_2_d:"Publication gratuite des bases de données géolocalisées pour les collectivités de plus de 3 500 habitants.",
+ o3_2_t:"Open Data (Loi République Numérique)", o3_2_d:"Publication gratuite des bases de données géolocalisées pour les collectivités de plus de 3 500 habitants.",
     o3_2_legale:"<b>Base légale</b>, Code des relations public-administration", o3_2_delai:"<b>Délai</b>, publication dans un délai raisonnable après production", o3_2_ctrl:"<b>Contrôle</b>, CADA, tribunal administratif",
-    cta_title:"Un référentiel cartographique à produire ou fiabiliser ?", cta_sub:"Décrivez votre politique publique, nous vous proposons la méthode de production adaptée.", cta_btn:"Nous contacter",
+    cta_title:"Un référentiel cartographique à produire ou fiabiliser ?", cta_sub:"Décrivez votre politique publique, nous vous proposons la méthode de production adaptée. Devis sous 48 h.", cta_btn:"Nous contacter",
     ftr_h_solutions:"Solutions", ftr_h_expertise:"Expertises", ftr_h_company:"Entreprise", ftr_h_contact:"Contact",
     ftr_desc:"Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.",
     ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"
   },
   en: {
     nav_about:"About us", nav_solutions:"Solutions", nav_sol_mairie:"Municipalities", nav_sol_epci:"Inter-municipal bodies", nav_sol_etat:"State &amp; Institutions", nav_sol_ong:"NGOs &amp; Associations", nav_sol_prive:"Private companies",
-    nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_contact:"Contact us", nav_legal:"Legal notice",
+    nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_twin:"Digital twin", nav_contact:"Contact us", nav_legal:"Legal notice",
     bc_home:"Home", eyebrow:"Solutions for the State, Departments and Regions",
     h1:'<span class="h1-ico"><img src="assets/icons/france.svg" alt="French state"></span>You are an institution',
     lead:"Prefecture, DDT(M), DREAL, Departmental Council, Regional Council, public operators, commissions: you steer or oversee mapping obligations that go beyond municipal scale, risk prevention, energy, biodiversity, open data. We produce the reference data these policies rely on.",
@@ -365,29 +369,29 @@ window.I18N = {
     intro_eyebrow:"Our approach", intro_h2:"Making the data you pass on to municipalities reliable",
     intro_p1:"Obligations steered at State or major local-authority level (flood/fire risk plans, renewable energy zones, INSPIRE...) share one thing in common: they must then be picked up, error-free, by dozens of municipalities and inter-municipal bodies that don't always have in-house GIS expertise to check them.",
     intro_p2:"We produce or verify this reference data (technical mapping, CNIG compliance, INSPIRE flow preparation) so it is directly reusable downstream.",
-    ph_intro:"Image placeholder, institutional mapping / official notification",
+ 
     eco_eyebrow:"Who is concerned", eco_title:"A three-tier ecosystem", eco_sub:"This scope covers the State's field services as much as the major public operators and oversight commissions.",
     eco1_t:"Decentralised State services", eco1_d:"Prefecture, DDT(M), DREAL, Regional Health Agency, fire department, tax authority: the State's territorial relays that draft and check reference documents.",
     eco2_t:"Public &amp; semi-public operators", eco2_d:"Telecom operators (5G/fibre rollout), energy network operators, the national employment agency, social housing landlords: geographic needs specific to their public-service missions.",
     eco3_t:"Commissions &amp; oversight bodies", eco3_d:"The information-access commission, the national geographic information council, the mining risk agency, the regional energy committee: the bodies that validate compliance or arbitrate appeals.",
     t1_eyebrow:"Risks &amp; prevention", t1_h2:"Reliable risk data, shared across the whole territory", t1_sub:"These documents, drafted by the State, are then binding on municipalities through their planning documents.",
-    o1_1_shot:"Image placeholder, flood/fire/subsidence risk plan zoning", o1_1_t:"Risk Prevention Plans (flood, fire, subsidence)", o1_1_d:"Mapping of hazard zones (flooding, fire, clay shrink-swell) appended to planning documents.",
+ o1_1_t:"Risk Prevention Plans (flood, fire, subsidence)", o1_1_d:"Mapping of hazard zones (flooding, fire, clay shrink-swell) appended to planning documents.",
     o1_1_legale:"<b>Legal basis</b>, Environmental Code", o1_1_delai:"<b>Deadline</b>, mandatory annexation upon plan approval", o1_1_ctrl:"<b>Oversight</b>, Prefect, DDT",
-    o1_2_shot:"Image placeholder, fire-defence tracks and fuel breaks", o1_2_t:"Forest fire defence (at-risk woodland)", o1_2_d:"Mapping of access tracks, fuel breaks and water points in forest areas classed as at-risk.",
+ o1_2_t:"Forest fire defence (at-risk woodland)", o1_2_d:"Mapping of access tracks, fuel breaks and water points in forest areas classed as at-risk.",
     o1_2_legale:"<b>Legal basis</b>, Forestry Code", o1_2_delai:"<b>Deadline</b>, annual clearing and update", o1_2_ctrl:"<b>Oversight</b>, DDTM, Prefect, fire department",
-    o1_3_shot:"Image placeholder, cavity and mining risk mapping", o1_3_t:"Former quarries &amp; mining risks", o1_3_d:"Mapping of underground cavities and subsidence zones to be notified to the municipalities concerned.",
+ o1_3_t:"Former quarries &amp; mining risks", o1_3_d:"Mapping of underground cavities and subsidence zones to be notified to the municipalities concerned.",
     o1_3_legale:"<b>Legal basis</b>, Mining Code", o1_3_delai:"<b>Deadline</b>, integrated into every planning document", o1_3_ctrl:"<b>Oversight</b>, GEODERIS, DREAL",
     t2_eyebrow:"Energy &amp; biodiversity", t2_h2:"Coordinating Department, Region and municipalities",
-    o2_1_shot:"Image placeholder, renewable energy acceleration zoning", o2_1_t:"Renewable Energy Acceleration Zones (ZAEnR)", o2_1_d:"Mapping of priority zones for renewable energy projects, passed on to municipalities.",
+ o2_1_t:"Renewable Energy Acceleration Zones (ZAEnR)", o2_1_d:"Mapping of priority zones for renewable energy projects, passed on to municipalities.",
     o2_1_legale:"<b>Legal basis</b>, Renewable Energy Act (2023)", o2_1_delai:"<b>Deadline</b>, ongoing transmission to the prefectural referent", o2_1_ctrl:"<b>Oversight</b>, Prefect, Regional Energy Committee",
-    o2_2_shot:"Image placeholder, Regional Ecological Coherence Scheme", o2_2_t:"SRCE (regional ecological network framework)", o2_2_d:"Regional biodiversity reference framework that local and territorial plans must comply with.",
+ o2_2_t:"SRCE (regional ecological network framework)", o2_2_d:"Regional biodiversity reference framework that local and territorial plans must comply with.",
     o2_2_legale:"<b>Legal basis</b>, Environmental Code", o2_2_delai:"<b>Deadline</b>, review aligned with the regional planning scheme", o2_2_ctrl:"<b>Oversight</b>, DREAL",
     t3_eyebrow:"Digital &amp; Open Data", t3_h2:"Making public data interoperable",
-    o3_1_shot:"Image placeholder, INSPIRE metadata catalogue", o3_1_t:"INSPIRE Directive", o3_1_d:"Interoperability and accessibility of all environmental geographic data via standard flows (WMS, WFS).",
+ o3_1_t:"INSPIRE Directive", o3_1_d:"Interoperability and accessibility of all environmental geographic data via standard flows (WMS, WFS).",
     o3_1_legale:"<b>Legal basis</b>, Directive 2007/2/EC", o3_1_delai:"<b>Deadline</b>, ongoing cataloguing and metadata updates", o3_1_ctrl:"<b>Oversight</b>, European Commission",
-    o3_2_shot:"Image placeholder, local authority Open Data portal", o3_2_t:"Open Data (Digital Republic Act)", o3_2_d:"Free publication of geolocated databases for local authorities with over 3,500 inhabitants.",
+ o3_2_t:"Open Data (Digital Republic Act)", o3_2_d:"Free publication of geolocated databases for local authorities with over 3,500 inhabitants.",
     o3_2_legale:"<b>Legal basis</b>, Public-Administration Relations Code", o3_2_delai:"<b>Deadline</b>, publication within a reasonable time after production", o3_2_ctrl:"<b>Oversight</b>, Information access commission, administrative court",
-    cta_title:"A reference dataset to produce or make reliable?", cta_sub:"Describe your public policy, we'll propose a suitable production method.", cta_btn:"Contact us",
+    cta_title:"A reference dataset to produce or make reliable?", cta_sub:"Describe your public policy, we'll propose a suitable production method. Quote within 48 h.", cta_btn:"Contact us",
     ftr_h_solutions:"Solutions", ftr_h_expertise:"Expertise", ftr_h_company:"Company", ftr_h_contact:"Contact",
     ftr_desc:"Independent expertise in geographic information systems, land surveying, network detection and web mapping. Based in Le Tampon, Réunion Island.",
     ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"

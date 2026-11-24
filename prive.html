@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="assets/logo-mark-geomark.png">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://data.geopf.fr https://unpkg.com https://*.google-analytics.com https://*.googletagmanager.com; media-src 'self'; connect-src 'self' https://formspree.io https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; frame-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://geomark-sig.fr/prive.html">
 <meta property="og:site_name" content="Geomark SIG">
 <meta property="og:image" content="https://geomark-sig.fr/assets/images/og-image.png">
@@ -37,6 +39,7 @@
       <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
       <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
       <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="jumeau-numerique.html" data-i18n="nav_twin">Jumeau numérique</a>
       <a href="contact.html" class="btn-nav" data-i18n="nav_contact">Nous contacter</a>
     </nav>
     <div class="hdr-right">
@@ -51,7 +54,7 @@
     <div class="breadcrumb"><a href="index.html" data-i18n="bc_home">Accueil</a> / <span data-i18n="nav_sol_prive">Entreprises privées</span></div>
     <span class="eyebrow" data-i18n="eyebrow">Solutions pour les entreprises</span>
     <h1 data-i18n="h1"><span class="h1-ico"><video autoplay loop muted playsinline><source src="assets/videos/gestion-entreprise.mp4" type="video/mp4"></video></span>Vous êtes une entreprise</h1>
-    <p class="lead" data-i18n="lead">Travaux publics, bureaux d'études, promoteurs, immobilier, retail, logistique, agriculture, assurance : ici, pas d'obligation légale à respecter mais un avantage concret à en tirer. Chaque traitement géographique est pensé pour un objectif mesurable, réduire un coût, sécuriser un investissement ou gagner un marché.</p>
+    <p class="lead" data-i18n="lead">Travaux publics, bureaux d'études, promoteurs, immobilier, retail, logistique, agriculture, assurance : ici, pas d'obligation légale à respecter mais un avantage concret à en tirer. Chaque traitement géographique est pensé pour un objectif mesurable : réduire un coût, sécuriser un investissement ou gagner un marché.</p>
     <div class="chiprow">
       <span class="chip" data-i18n="class1">Travaux publics</span>
       <span class="chip" data-i18n="class2">Bureaux d'études</span>
@@ -320,7 +323,7 @@
     <div class="ctaband reveal">
       <div class="ctaband-tx">
         <h2 data-i18n="cta_title">Un chantier, un site ou un territoire à analyser ?</h2>
-        <p data-i18n="cta_sub">Décrivez votre projet, nous chiffrons rapidement un traitement sur mesure.</p>
+        <p data-i18n="cta_sub">Décrivez votre projet, nous chiffrons rapidement un traitement sur mesure. Devis sous 48 h.</p>
       </div>
       <div class="ctaband-btns">
         <a href="contact.html" class="btn btn-orange" data-i18n="cta_btn">Nous contacter</a>
@@ -353,6 +356,7 @@
       <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
       <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
       <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="jumeau-numerique.html" data-i18n="nav_twin">Jumeau numérique</a>
     </div>
     <div class="ftr-col">
       <div class="ftr-h" data-i18n="ftr_h_company">Entreprise</div>
@@ -365,7 +369,7 @@
       <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>
       <a href="tel:+33613184710">+33 6 13 18 47 10</a>
       <a href="tel:+262693616923">+262 6 93 61 69 23</a>
-      <a href="https://www.linkedin.com/in/robin-maume/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/company/geomark-sig/" target="_blank">LinkedIn</a>
     </div>
   </div>
   <div class="wrap ftr-bottom">
@@ -378,56 +382,56 @@
 window.I18N = {
   fr: {
     nav_about:"Qui sommes-nous ?", nav_solutions:"Solutions", nav_sol_mairie:"Mairies", nav_sol_epci:"Intercommunalités", nav_sol_etat:"État &amp; Institutions", nav_sol_ong:"ONG &amp; Associations", nav_sol_prive:"Entreprises privées",
-    nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
+    nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_twin:"Jumeau numérique", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
     bc_home:"Accueil", eyebrow:"Solutions pour les entreprises",
     h1:'<span class="h1-ico"><video autoplay loop muted playsinline><source src="assets/videos/gestion-entreprise.mp4" type="video/mp4"></video></span>Vous êtes une entreprise',
-    lead:"Travaux publics, bureaux d'études, promoteurs, immobilier, retail, logistique, agriculture, assurance : ici, pas d'obligation légale à respecter mais un avantage concret à en tirer. Chaque traitement géographique est pensé pour un objectif mesurable, réduire un coût, sécuriser un investissement ou gagner un marché.",
+    lead:"Travaux publics, bureaux d'études, promoteurs, immobilier, retail, logistique, agriculture, assurance : ici, pas d'obligation légale à respecter mais un avantage concret à en tirer. Chaque traitement géographique est pensé pour un objectif mesurable : réduire un coût, sécuriser un investissement ou gagner un marché.",
     class1:"Travaux publics", class2:"Bureaux d'études", class3:"Promoteurs &amp; immobilier", class4:"Retail &amp; agriculture", class5:"Assurance &amp; télécoms",
     jump1:"🏗️ TP &amp; bureaux d'études", jump2:"🏢 Immobilier", jump3:"🎯 Commerce &amp; marketing", jump4:"🚚 Logistique &amp; agriculture", jump5:"🛡️ Finance &amp; assurance", jump6:"📡 Infrastructure &amp; impact",
     intro_eyebrow:"Notre approche", intro_h2:"La donnée géographique comme levier de rentabilité",
     intro_p1:"Pour une entreprise privée, un traitement géographique n'a de valeur que s'il se traduit en gain direct : un chantier réceptionné plus vite, un site mieux choisi, une tournée plus courte, un risque mieux tarifé.",
     intro_p2:"Nous livrons des analyses directement exploitables par vos équipes commerciales, techniques ou de direction, pas seulement des cartes.",
-    ph_intro:"Emplacement image, tableau de bord géodécisionnel",
+ 
     t1_eyebrow:"TP &amp; bureaux d'études", t1_h2:"Réactivité et précision, dès la phase chantier",
-    o1_1_shot:"Emplacement capture, récolement de chantier géoréférencé", o1_1_t:"Récolement de chantier (PCRS)", o1_1_d:"Levé de récolement conforme au Plan de Corps de Rue Simplifié, livrable directement intégrable par les exploitants de réseaux.",
+ o1_1_t:"Récolement de chantier (PCRS)", o1_1_d:"Levé de récolement conforme au Plan de Corps de Rue Simplifié, livrable directement intégrable par les exploitants de réseaux.",
     o1_1_avantage:"<b>Avantage</b>, accélère la réception de chantier et sécurise votre responsabilité en cas de sinistre ultérieur",
-    o1_2_shot:"Emplacement capture, cartographie d'impact environnemental", o1_2_t:"Cartographie d'impact environnemental", o1_2_d:"Modélisation de bassins versants et de trames verte/bleue sur QGIS pour vos dossiers réglementaires (VRD, environnement).",
+ o1_2_t:"Cartographie d'impact environnemental", o1_2_d:"Modélisation de bassins versants et de trames verte/bleue sur QGIS pour vos dossiers réglementaires (VRD, environnement).",
     o1_2_avantage:"<b>Avantage</b>, dossiers d'autorisation plus solides, délais d'instruction raccourcis",
-    o1_3_shot:"Emplacement capture, suivi de chantier par drone", o1_3_t:"Suivi de chantier par drone", o1_3_d:"Photogrammétrie et orthophotos pour un suivi de chantier régulier et des calculs de cubatures précis.",
+ o1_3_t:"Suivi de chantier par drone", o1_3_d:"Photogrammétrie et orthophotos pour un suivi de chantier régulier et des calculs de cubatures précis.",
     o1_3_avantage:"<b>Avantage</b>, suivi de chantier en temps réel, sans intervention humaine au sol",
     t2_eyebrow:"Immobilier", t2_h2:"Sécuriser une acquisition avant de signer",
-    o2_1_shot:"Emplacement capture, analyse parcellaire et servitudes", o2_1_t:"Analyse parcellaire &amp; servitudes", o2_1_d:"Vérification des servitudes d'utilité publique et du potentiel constructible avant tout achat foncier ou dépôt de permis.",
+ o2_1_t:"Analyse parcellaire &amp; servitudes", o2_1_d:"Vérification des servitudes d'utilité publique et du potentiel constructible avant tout achat foncier ou dépôt de permis.",
     o2_1_avantage:"<b>Avantage</b>, réduit le risque d'acquisition d'un terrain grevé ou inconstructible",
-    o2_2_shot:"Emplacement capture, potentiel foncier et constructibilité", o2_2_t:"Potentiel foncier &amp; constructibilité", o2_2_d:"Identification des parcelles à fort potentiel de valorisation à partir du zonage PLU et des règles de constructibilité.",
+ o2_2_t:"Potentiel foncier &amp; constructibilité", o2_2_d:"Identification des parcelles à fort potentiel de valorisation à partir du zonage PLU et des règles de constructibilité.",
     o2_2_avantage:"<b>Avantage</b>, repère rapidement le foncier le plus rentable avant vos concurrents",
-    o2_3_shot:"Emplacement capture, jumeau numérique BIM géoréférencé", o2_3_t:"Jumeau numérique / BIM géoréférencé", o2_3_d:"Maquette 3D du bâtiment recalée sur le référentiel SIG du site pour une coordination fine des travaux.",
+ o2_3_t:"Jumeau numérique / BIM géoréférencé", o2_3_d:"Maquette 3D du bâtiment recalée sur le référentiel SIG du site pour une coordination fine des travaux.",
     o2_3_avantage:"<b>Avantage</b>, meilleure coordination de chantier, réduction des erreurs et surcoûts",
     t3_eyebrow:"Commerce &amp; marketing", t3_h2:"Choisir le bon territoire avant d'investir",
-    o3_1_shot:"Emplacement capture, zone de chalandise géomarketing", o3_1_t:"Géomarketing (zones de chalandise)", o3_1_d:"Étude d'implantation croisant données commerciales et données géographiques pour orienter la prospection.",
+ o3_1_t:"Géomarketing (zones de chalandise)", o3_1_d:"Étude d'implantation croisant données commerciales et données géographiques pour orienter la prospection.",
     o3_1_avantage:"<b>Avantage</b>, optimise le choix d'implantation et réduit le risque d'échec commercial",
-    o3_2_shot:"Emplacement capture, cartographie concurrentielle", o3_2_t:"Cartographie concurrentielle", o3_2_d:"Maillage des concurrents existants pour anticiper les zones de cannibalisation avant ouverture.",
+ o3_2_t:"Cartographie concurrentielle", o3_2_d:"Maillage des concurrents existants pour anticiper les zones de cannibalisation avant ouverture.",
     o3_2_avantage:"<b>Avantage</b>, sécurise la décision d'investissement en amont de l'ouverture",
     t4_eyebrow:"Logistique &amp; agriculture", t4_h2:"Chaque kilomètre et chaque hectare compte",
-    o4_1_shot:"Emplacement capture, optimisation de tournées", o4_1_t:"Optimisation de tournées (géo-routage)", o4_1_d:"Calcul des itinéraires de livraison les plus efficaces à partir de vos contraintes de terrain et de créneaux.",
+ o4_1_t:"Optimisation de tournées (géo-routage)", o4_1_d:"Calcul des itinéraires de livraison les plus efficaces à partir de vos contraintes de terrain et de créneaux.",
     o4_1_avantage:"<b>Avantage</b>, réduction des coûts carburant, gain de temps, moindre empreinte carbone",
-    o4_2_shot:"Emplacement capture, carte de rendement agricole", o4_2_t:"Agriculture de précision", o4_2_d:"Télédétection et cartes de rendement par parcelle pour ajuster les intrants au plus près du besoin réel.",
+ o4_2_t:"Agriculture de précision", o4_2_d:"Télédétection et cartes de rendement par parcelle pour ajuster les intrants au plus près du besoin réel.",
     o4_2_avantage:"<b>Avantage</b>, optimisation des intrants, gain de rendement, traçabilité RSE",
     t5_eyebrow:"Finance &amp; assurance", t5_h2:"Piloter le risque par la donnée",
     t6_eyebrow:"Infrastructure &amp; impact", t6_h2:"Déployer et rendre compte, avec la même donnée",
-    o5_1_shot:"Emplacement capture, cartographie des risques assurantiels", o5_1_t:"Cartographie des risques assurantiels", o5_1_d:"Croisement de l'exposition aux catastrophes naturelles (géorisques) avec votre portefeuille de contrats.",
+ o5_1_t:"Cartographie des risques assurantiels", o5_1_d:"Croisement de l'exposition aux catastrophes naturelles (géorisques) avec votre portefeuille de contrats.",
     o5_1_avantage:"<b>Avantage</b>, tarification plus précise des primes, meilleure gestion du risque de portefeuille",
-    o5_2_shot:"Emplacement capture, ingénierie de couverture réseau", o5_2_t:"Ingénierie réseau télécoms / fibre", o5_2_d:"Cartographie de couverture et priorisation des zones de déploiement selon leur rentabilité prévisionnelle.",
+ o5_2_t:"Ingénierie réseau télécoms / fibre", o5_2_d:"Cartographie de couverture et priorisation des zones de déploiement selon leur rentabilité prévisionnelle.",
     o5_2_avantage:"<b>Avantage</b>, priorisation des investissements sur les zones les plus rentables",
-    o5_3_shot:"Emplacement capture, bilan carbone territorial géolocalisé", o5_3_t:"Bilan carbone territorial géolocalisé", o5_3_d:"Cartographie de l'empreinte environnementale de vos sites et flux pour vos obligations de reporting.",
+ o5_3_t:"Bilan carbone territorial géolocalisé", o5_3_d:"Cartographie de l'empreinte environnementale de vos sites et flux pour vos obligations de reporting.",
     o5_3_avantage:"<b>Avantage</b>, reporting réglementaire facilité (CSRD), image de marque valorisée",
-    cta_title:"Un chantier, un site ou un territoire à analyser ?", cta_sub:"Décrivez votre projet, nous chiffrons rapidement un traitement sur mesure.", cta_btn:"Nous contacter",
+    cta_title:"Un chantier, un site ou un territoire à analyser ?", cta_sub:"Décrivez votre projet, nous chiffrons rapidement un traitement sur mesure. Devis sous 48 h.", cta_btn:"Nous contacter",
     ftr_h_solutions:"Solutions", ftr_h_expertise:"Expertises", ftr_h_company:"Entreprise", ftr_h_contact:"Contact",
     ftr_desc:"Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.",
     ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"
   },
   en: {
     nav_about:"About us", nav_solutions:"Solutions", nav_sol_mairie:"Municipalities", nav_sol_epci:"Inter-municipal bodies", nav_sol_etat:"State &amp; Institutions", nav_sol_ong:"NGOs &amp; Associations", nav_sol_prive:"Private companies",
-    nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_contact:"Contact us", nav_legal:"Legal notice",
+    nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_twin:"Digital twin", nav_contact:"Contact us", nav_legal:"Legal notice",
     bc_home:"Home", eyebrow:"Solutions for businesses",
     h1:'<span class="h1-ico"><video autoplay loop muted playsinline><source src="assets/videos/gestion-entreprise.mp4" type="video/mp4"></video></span>You are a business',
     lead:"Public works, engineering firms, developers, real estate, retail, logistics, agriculture, insurance: here, there's no legal obligation to meet, only a concrete benefit to gain. Every geographic process is designed for a measurable goal, cutting a cost, securing an investment, or winning a deal.",
@@ -436,40 +440,40 @@ window.I18N = {
     intro_eyebrow:"Our approach", intro_h2:"Geographic data as a profitability lever",
     intro_p1:"For a private company, a geographic process only has value if it translates into a direct gain: a site handed over faster, a better-chosen location, a shorter round, a more accurately priced risk.",
     intro_p2:"We deliver analyses directly usable by your sales, technical or management teams, not just maps.",
-    ph_intro:"Image placeholder, geo-decision dashboard",
+ 
     t1_eyebrow:"Public works &amp; engineering firms", t1_h2:"Responsiveness and precision, from the construction phase",
-    o1_1_shot:"Image placeholder, georeferenced as-built survey", o1_1_t:"As-built survey (PCRS)", o1_1_d:"As-built survey compliant with the simplified street-plan base map, delivered ready to integrate for network operators.",
+ o1_1_t:"As-built survey (PCRS)", o1_1_d:"As-built survey compliant with the simplified street-plan base map, delivered ready to integrate for network operators.",
     o1_1_avantage:"<b>Benefit</b>, speeds up site handover and protects your liability in case of a later incident",
-    o1_2_shot:"Image placeholder, environmental impact mapping", o1_2_t:"Environmental impact mapping", o1_2_d:"Modelling of watersheds and green/blue networks in QGIS for your regulatory files (utilities, environment).",
+ o1_2_t:"Environmental impact mapping", o1_2_d:"Modelling of watersheds and green/blue networks in QGIS for your regulatory files (utilities, environment).",
     o1_2_avantage:"<b>Benefit</b>, stronger permit applications, shorter review times",
-    o1_3_shot:"Image placeholder, drone site monitoring", o1_3_t:"Drone site monitoring", o1_3_d:"Photogrammetry and orthophotos for regular site monitoring and precise volume calculations.",
+ o1_3_t:"Drone site monitoring", o1_3_d:"Photogrammetry and orthophotos for regular site monitoring and precise volume calculations.",
     o1_3_avantage:"<b>Benefit</b>, real-time site monitoring, no need for staff on the ground",
     t2_eyebrow:"Real estate", t2_h2:"Secure an acquisition before you sign",
-    o2_1_shot:"Image placeholder, parcel and easement analysis", o2_1_t:"Parcel &amp; easement analysis", o2_1_d:"Verification of public utility easements and buildable potential before any land purchase or permit application.",
+ o2_1_t:"Parcel &amp; easement analysis", o2_1_d:"Verification of public utility easements and buildable potential before any land purchase or permit application.",
     o2_1_avantage:"<b>Benefit</b>, reduces the risk of acquiring encumbered or unbuildable land",
-    o2_2_shot:"Image placeholder, land potential and buildability", o2_2_t:"Land potential &amp; buildability", o2_2_d:"Identification of high-value parcels based on local plan zoning and buildability rules.",
+ o2_2_t:"Land potential &amp; buildability", o2_2_d:"Identification of high-value parcels based on local plan zoning and buildability rules.",
     o2_2_avantage:"<b>Benefit</b>, quickly spots the most profitable land ahead of your competitors",
-    o2_3_shot:"Image placeholder, georeferenced BIM digital twin", o2_3_t:"Georeferenced digital twin / BIM", o2_3_d:"3D building model aligned with the site's GIS reference framework for fine-grained work coordination.",
+ o2_3_t:"Georeferenced digital twin / BIM", o2_3_d:"3D building model aligned with the site's GIS reference framework for fine-grained work coordination.",
     o2_3_avantage:"<b>Benefit</b>, better site coordination, fewer errors and cost overruns",
     t3_eyebrow:"Retail &amp; marketing", t3_h2:"Choosing the right territory before investing",
-    o3_1_shot:"Image placeholder, geomarketing catchment area", o3_1_t:"Geomarketing (catchment areas)", o3_1_d:"Site-location study cross-referencing commercial and geographic data to steer prospecting.",
+ o3_1_t:"Geomarketing (catchment areas)", o3_1_d:"Site-location study cross-referencing commercial and geographic data to steer prospecting.",
     o3_1_avantage:"<b>Benefit</b>, optimises site selection and reduces the risk of commercial failure",
-    o3_2_shot:"Image placeholder, competitive mapping", o3_2_t:"Competitive mapping", o3_2_d:"Mapping of existing competitors to anticipate cannibalisation zones before opening.",
+ o3_2_t:"Competitive mapping", o3_2_d:"Mapping of existing competitors to anticipate cannibalisation zones before opening.",
     o3_2_avantage:"<b>Benefit</b>, secures the investment decision ahead of opening",
     t4_eyebrow:"Logistics &amp; agriculture", t4_h2:"Every kilometre and every hectare counts",
-    o4_1_shot:"Image placeholder, route optimisation", o4_1_t:"Route optimisation (geo-routing)", o4_1_d:"Calculation of the most efficient delivery routes based on your terrain constraints and time slots.",
+ o4_1_t:"Route optimisation (geo-routing)", o4_1_d:"Calculation of the most efficient delivery routes based on your terrain constraints and time slots.",
     o4_1_avantage:"<b>Benefit</b>, lower fuel costs, time savings, reduced carbon footprint",
-    o4_2_shot:"Image placeholder, agricultural yield map", o4_2_t:"Precision agriculture", o4_2_d:"Remote sensing and per-plot yield maps to fine-tune inputs to the actual need.",
+ o4_2_t:"Precision agriculture", o4_2_d:"Remote sensing and per-plot yield maps to fine-tune inputs to the actual need.",
     o4_2_avantage:"<b>Benefit</b>, input optimisation, higher yield, CSR traceability",
     t5_eyebrow:"Finance &amp; insurance", t5_h2:"Steering risk through data",
     t6_eyebrow:"Infrastructure &amp; impact", t6_h2:"Deploy and report, from the same data",
-    o5_1_shot:"Image placeholder, insurance risk mapping", o5_1_t:"Insurance risk mapping", o5_1_d:"Cross-referencing natural disaster exposure (georisks) with your policy portfolio.",
+ o5_1_t:"Insurance risk mapping", o5_1_d:"Cross-referencing natural disaster exposure (georisks) with your policy portfolio.",
     o5_1_avantage:"<b>Benefit</b>, more accurate premium pricing, better portfolio risk management",
-    o5_2_shot:"Image placeholder, network coverage engineering", o5_2_t:"Telecom / fibre network engineering", o5_2_d:"Coverage mapping and prioritisation of rollout areas based on projected profitability.",
+ o5_2_t:"Telecom / fibre network engineering", o5_2_d:"Coverage mapping and prioritisation of rollout areas based on projected profitability.",
     o5_2_avantage:"<b>Benefit</b>, prioritises investment in the most profitable areas",
-    o5_3_shot:"Image placeholder, georeferenced territorial carbon footprint", o5_3_t:"Georeferenced territorial carbon footprint", o5_3_d:"Mapping the environmental footprint of your sites and flows for your reporting obligations.",
+ o5_3_t:"Georeferenced territorial carbon footprint", o5_3_d:"Mapping the environmental footprint of your sites and flows for your reporting obligations.",
     o5_3_avantage:"<b>Benefit</b>, easier regulatory reporting (CSRD), enhanced brand image",
-    cta_title:"A site, a location or a territory to analyse?", cta_sub:"Describe your project, we'll quickly quote a tailored process.", cta_btn:"Contact us",
+    cta_title:"A site, a location or a territory to analyse?", cta_sub:"Describe your project, we'll quickly quote a tailored process. Quote within 48 h.", cta_btn:"Contact us",
     ftr_h_solutions:"Solutions", ftr_h_expertise:"Expertise", ftr_h_company:"Company", ftr_h_contact:"Contact",
     ftr_desc:"Independent expertise in geographic information systems, land surveying, network detection and web mapping. Based in Le Tampon, Réunion Island.",
     ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"

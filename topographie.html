@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="assets/logo-mark-geomark.png">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://data.geopf.fr https://unpkg.com https://*.google-analytics.com https://*.googletagmanager.com; media-src 'self'; connect-src 'self' https://formspree.io https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; frame-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://geomark-sig.fr/topographie.html">
 <meta property="og:site_name" content="Geomark SIG">
 <meta property="og:image" content="https://geomark-sig.fr/assets/images/og-image.png">
@@ -37,6 +39,7 @@
       <a href="topographie.html" class="active" data-i18n="nav_topo">Topographie</a>
       <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
       <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="jumeau-numerique.html" data-i18n="nav_twin">Jumeau numérique</a>
       <a href="contact.html" class="btn-nav" data-i18n="nav_contact">Nous contacter</a>
     </nav>
     <div class="hdr-right">
@@ -125,7 +128,7 @@
     <div class="ctaband reveal">
       <div class="ctaband-tx">
         <h2 data-i18n="cta_title">Besoin d'un levé topographique ?</h2>
-        <p data-i18n="cta_sub">Décrivez votre terrain et vos délais, nous organisons l'intervention.</p>
+        <p data-i18n="cta_sub">Décrivez votre terrain et vos délais, nous organisons l'intervention. Devis sous 48 h.</p>
       </div>
       <div class="ctaband-btns">
         <a href="contact.html" class="btn btn-orange" data-i18n="cta_btn">Nous contacter</a>
@@ -158,6 +161,7 @@
       <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
       <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
       <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="jumeau-numerique.html" data-i18n="nav_twin">Jumeau numérique</a>
     </div>
     <div class="ftr-col">
       <div class="ftr-h" data-i18n="ftr_h_company">Entreprise</div>
@@ -170,7 +174,7 @@
       <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>
       <a href="tel:+33613184710">+33 6 13 18 47 10</a>
       <a href="tel:+262693616923">+262 6 93 61 69 23</a>
-      <a href="https://www.linkedin.com/in/robin-maume/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/company/geomark-sig/" target="_blank">LinkedIn</a>
     </div>
   </div>
   <div class="wrap ftr-bottom">
@@ -182,7 +186,7 @@
 <script>
 window.I18N = {
   fr: {
-    nav_about:"Qui sommes-nous ?", nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
+    nav_about:"Qui sommes-nous ?", nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_twin:"Jumeau numérique", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
     nav_solutions:"Solutions", nav_sol_mairie:"Mairies", nav_sol_epci:"Intercommunalités", nav_sol_etat:"État &amp; Institutions", nav_sol_ong:"ONG &amp; Associations", nav_sol_prive:"Entreprises privées", ftr_h_solutions:"Solutions",
     bc_home:"Accueil", eyebrow:"Expertise technique",
     h1:"Topographie",
@@ -190,25 +194,25 @@ window.I18N = {
     intro_eyebrow:"Notre approche", intro_h2:"La précision commence sur le terrain",
     intro_p1:"Chaque levé est réalisé avec du matériel professionnel calibré et rattaché aux référentiels géodésiques officiels, quelle que soit l'échelle du projet.",
     intro_p2:"Les données brutes sont ensuite contrôlées, structurées et livrées dans le format attendu par votre bureau d'études, votre SIG ou votre collectivité.",
-    ph_intro:"Emplacement image, matériel de levé GPS RTK sur le terrain",
+ 
     s1_eyebrow:"Levés GPS RTK", s1_h2:"Précision centimétrique, en toute condition",
     s1_p:"Les campagnes de terrain s'appuient sur des équipements Trimble et un rattachement systématique au réseau géodésique national.",
     s1_li1:"Levés RTK en temps réel, précision centimétrique", s1_li2:"Rattachement au réseau géodésique national (RGF93)",
     s1_li3:"Campagnes de terrain avec instrumentation Trimble", s1_li4:"Contrôle qualité et validation des mesures",
-    ph_s1:"Emplacement image, carte de points levés GPS RTK",
+ 
     s4_eyebrow:"Intégration SIG", s4_h2:"Des levés qui rejoignent votre système d'information",
     s4_p:"Un levé terrain prend toute sa valeur lorsqu'il est intégré durablement dans votre base de données géographique.",
     s4_li1:"Structuration des levés dans une base SIG", s4_li2:"Compatibilité avec les référentiels existants (RGF93, projections locales)",
     s4_li3:"Mise à jour de bases topographiques historiques", s4_li4:"Livraison multi-format (DWG, DXF, SHP, GeoJSON)",
-    ph_s4:"Emplacement image, intégration d'un levé dans un SIG",
+ 
     stack_eyebrow:"Outillage", stack_title:"Stack technique",
-    cta_title:"Besoin d'un levé topographique ?", cta_sub:"Décrivez votre terrain et vos délais, nous organisons l'intervention.", cta_btn:"Nous contacter",
+    cta_title:"Besoin d'un levé topographique ?", cta_sub:"Décrivez votre terrain et vos délais, nous organisons l'intervention. Devis sous 48 h.", cta_btn:"Nous contacter",
     ftr_desc:"Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.",
     ftr_h_expertise:"Expertises", ftr_h_company:"Entreprise", ftr_h_contact:"Contact",
     ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"
   },
   en: {
-    nav_about:"About us", nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_contact:"Contact us", nav_legal:"Legal notice",
+    nav_about:"About us", nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_twin:"Digital twin", nav_contact:"Contact us", nav_legal:"Legal notice",
     nav_solutions:"Solutions", nav_sol_mairie:"Municipalities", nav_sol_epci:"Inter-municipal bodies", nav_sol_etat:"State &amp; Institutions", nav_sol_ong:"NGOs &amp; Associations", nav_sol_prive:"Private companies", ftr_h_solutions:"Solutions",
     bc_home:"Home", eyebrow:"Technical expertise",
     h1:"Land Surveying",
@@ -216,19 +220,19 @@ window.I18N = {
     intro_eyebrow:"Our approach", intro_h2:"Precision starts on the ground",
     intro_p1:"Every survey is carried out with calibrated professional equipment, tied to official geodetic reference systems, whatever the scale of the project.",
     intro_p2:"Raw data is then checked, structured and delivered in the format expected by your design office, your GIS or your local authority.",
-    ph_intro:"Image placeholder, RTK GPS survey equipment in the field",
+ 
     s1_eyebrow:"RTK GPS surveys", s1_h2:"Centimetre precision, in any condition",
     s1_p:"Field campaigns rely on Trimble equipment and systematic connection to the national geodetic network.",
     s1_li1:"Real-time RTK surveys, centimetre precision", s1_li2:"Connection to the national geodetic network (RGF93)",
     s1_li3:"Field campaigns with Trimble instrumentation", s1_li4:"Quality control and measurement validation",
-    ph_s1:"Image placeholder, RTK GPS survey point map",
+ 
     s4_eyebrow:"GIS integration", s4_h2:"Surveys that join your information system",
     s4_p:"A field survey reaches its full value once it is durably integrated into your geographic database.",
     s4_li1:"Structuring surveys into a GIS database", s4_li2:"Compatibility with existing reference systems (RGF93, local projections)",
     s4_li3:"Updating historical topographic databases", s4_li4:"Multi-format delivery (DWG, DXF, SHP, GeoJSON)",
-    ph_s4:"Image placeholder, survey integration into a GIS",
+ 
     stack_eyebrow:"Tooling", stack_title:"Technical stack",
-    cta_title:"Need a topographic survey?", cta_sub:"Describe your site and your timeline, we'll organise the visit.", cta_btn:"Contact us",
+    cta_title:"Need a topographic survey?", cta_sub:"Describe your site and your timeline, we'll organise the visit. Quote within 48 h.", cta_btn:"Contact us",
     ftr_desc:"Independent expertise in geographic information systems, land surveying, network detection and web mapping. Based in Le Tampon, Réunion Island.",
     ftr_h_expertise:"Expertise", ftr_h_company:"Company", ftr_h_contact:"Contact",
     ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"

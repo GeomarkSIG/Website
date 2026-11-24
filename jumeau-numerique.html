@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="assets/logo-mark-geomark.png">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://data.geopf.fr https://unpkg.com https://*.google-analytics.com https://*.googletagmanager.com; media-src 'self'; connect-src 'self' https://formspree.io https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; frame-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://geomark-sig.fr/x content="Geomark SIG">
+<meta property="og:image" content="https://geomark-sig.fr/assets/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://geomark-sig.fr/assets/images/og-image.png">
+<title>Jumeau numérique territorial · Geomark SIG Solutions</title>
+<meta name="description" content="Jumeau numérique territorial : une réplique 2D/3D vivante de votre territoire pour simuler, anticiper et décider. Geomark SIG Solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="index.html"><img src="assets/images/logo-geomark.png" alt="Geomark SIG Solutions"></a>
+    <nav class="nav" id="nav">
+      <a href="qui-sommes-nous.html" data-i18n="nav_about">Qui sommes-nous ?</a>
+      <div class="nav-item-drop">
+        <button class="nav-drop-btn" type="button" data-i18n="nav_solutions">Solutions <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-drop-menu">
+          <a href="mairie.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21h18M4 21V10l8-6 8 6v11M9 21v-6h6v6"/></svg><span data-i18n="nav_sol_mairie">Mairies</span></a>
+          <a href="intercommunalite.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11 6.5 17M12 11l5.5 6"/></svg><span data-i18n="nav_sol_epci">Intercommunalités</span></a>
+          <a href="ecosysteme-etat.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/></svg><span data-i18n="nav_sol_etat">État &amp; Institutions</span></a>
+          <a href="ong-associations.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M2 20c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5"/><path d="M16 11a3 3 0 1 0 0-6"/><path d="M14.5 14.5c2.8.3 4.5 2.5 4.5 5.5"/></svg><span data-i18n="nav_sol_ong">ONG &amp; Associations</span></a>
+          <a href="prive.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg><span data-i18n="nav_sol_prive">Entreprises privées</span></a>
+        </div>
+      </div>
+      <a href="sig.html" data-i18n="nav_sig">SIG</a>
+      <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
+      <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
+      <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="jumeau-numerique.html" class="active" data-i18n="nav_twin">Jumeau numérique</a>
+      <a href="contact.html" class="btn-nav" data-i18n="nav_contact">Nous contacter</a>
+    </nav>
+    <div class="hdr-right">
+      <div class="langsw"><button data-lang="fr" class="active">FR</button><button data-lang="en">EN</button></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<section class="phero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-i18n="bc_home">Accueil</a> / <span data-i18n="nav_twin">Jumeau numérique</span></div>
+    <span class="eyebrow" data-i18n="eyebrow">Expertise technique</span>
+    <h1 data-i18n="h1">Jumeau numérique territorial</h1>
+    <p class="lead" data-i18n="lead">Une réplique numérique vivante de votre territoire, pour simuler, anticiper et décider avant d'agir sur le terrain.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="split-txt">
+        <span class="eyebrow" data-i18n="intro_eyebrow">Notre approche</span>
+        <h2 data-i18n="intro_h2">Du SIG au territoire simulé</h2>
+        <p data-i18n="intro_p1">Un jumeau numérique assemble vos données SIG, topographiques, réseaux et capteurs dans un modèle 2D/3D unique, mis à jour en continu.</p>
+        <p data-i18n="intro_p2">Élus et techniciens visualisent l'existant, testent des scénarios (crue, urbanisation, travaux) et mesurent leur impact avant toute décision.</p>
+        <p data-i18n="intro_p3">Exemples ci-contre et plus bas : maquettes 3D du Tampon (La Réunion) et de Mayotte, avec bâtiments, végétation et relief.</p>
+      </div>
+      <div class="split-media"><div class="ph-img auto"><img src="assets/images/jumeau-tampon-3d.jpg" alt="Jumeau numérique du Tampon : bâtiments, végétation et relief en 3D, Geomark SIG Solutions"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-line sec-gray">
+  <div class="wrap">
+    <div class="split rev reveal">
+      <div class="split-txt">
+        <span class="eyebrow" data-i18n="s1_eyebrow">Ce que nous construisons</span>
+        <h2 data-i18n="s1_h2">Un modèle fiable, alimenté par vos données</h2>
+        <ul class="split-list">
+          <li><svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg><span data-i18n="s1_li1">Modèle 3D du territoire (relevés drone, MNT, bâti)</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg><span data-i18n="s1_li2">Intégration des réseaux enterrés et aériens</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg><span data-i18n="s1_li3">Simulation de scénarios (risques, aménagement, travaux)</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg><span data-i18n="s1_li4">Publication web accessible aux élus et aux services</span></li>
+        </ul>
+        <div class="callout">
+          <h3 data-i18n="box_h">À retenir</h3>
+          <p data-i18n="box_p">Un jumeau numérique n'est pas une simple maquette 3D : c'est un outil d'aide à la décision, relié à des données réelles et tenu à jour.</p>
+        </div>
+      </div>
+      <div class="split-media"><div class="ph-img"><img src="assets/images/jumeau-mayotte-3d.jpg" alt="Jumeau numérique de Mayotte : bâtiments, végétation et littoral en 3D, Geomark SIG Solutions"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="ctaband reveal">
+      <div class="ctaband-tx">
+        <h2 data-i18n="cta_title">Un jumeau numérique pour votre territoire ?</h2>
+        <p data-i18n="cta_sub">Décrivez votre besoin, nous définissons ensemble un périmètre réaliste et progressif. Devis sous 48 h.</p>
+      </div>
+      <div class="ctaband-btns">
+        <a href="contact.html" class="btn btn-orange" data-i18n="cta_btn">Nous contacter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ribbon-band">
+  <img class="ribbon-img" src="assets/images/ribbon-band.jpg" alt="Geomark SIG Solutions">
+</section>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <div>
+      <div class="ftr-brand"><img src="assets/images/logo-geomark.png" alt="Geomark"></div>
+      <p class="ftr-desc" data-i18n="ftr_desc">Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.</p>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_solutions">Solutions</div>
+      <a href="mairie.html" data-i18n="nav_sol_mairie">Mairies</a>
+      <a href="intercommunalite.html" data-i18n="nav_sol_epci">Intercommunalités</a>
+      <a href="ecosysteme-etat.html" data-i18n="nav_sol_etat">État &amp; Institutions</a>
+      <a href="ong-associations.html" data-i18n="nav_sol_ong">ONG &amp; Associations</a>
+      <a href="prive.html" data-i18n="nav_sol_prive">Entreprises privées</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_expertise">Expertises</div>
+      <a href="sig.html" data-i18n="nav_sig">SIG</a>
+      <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
+      <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
+      <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="jumeau-numerique.html" data-i18n="nav_twin">Jumeau numérique</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_company">Entreprise</div>
+      <a href="qui-sommes-nous.html" data-i18n="nav_about">Qui sommes-nous ?</a>
+      <a href="contact.html" data-i18n="nav_contact">Nous contacter</a>
+      <a href="mentions-legales.html" data-i18n="nav_legal">Mentions légales</a>
+    </div>
+    <div class="ftr-col">
+      <div class="ftr-h" data-i18n="ftr_h_contact">Contact</div>
+      <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>
+      <a href="tel:+33613184710">+33 6 13 18 47 10</a>
+      <a href="tel:+262693616923">+262 6 93 61 69 23</a>
+      <a href="https://www.linkedin.com/company/geomark-sig/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap ftr-bottom">
+    <span data-i18n="ftr_copy">© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013</span>
+    <span>21°16'S, 55°30'E · Le Tampon, La Réunion</span>
+  </div>
+</footer>
+
+<script>
+window.I18N = {
+  fr: {
+    nav_about:"Qui sommes-nous ?", nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_twin:"Jumeau numérique", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
+    nav_solutions:"Solutions", nav_sol_mairie:"Mairies", nav_sol_epci:"Intercommunalités", nav_sol_etat:"État &amp; Institutions", nav_sol_ong:"ONG &amp; Associations", nav_sol_prive:"Entreprises privées", ftr_h_solutions:"Solutions",
+    bc_home:"Accueil", eyebrow:"Expertise technique",
+    h1:"Jumeau numérique territorial",
+    lead:"Une réplique numérique vivante de votre territoire, pour simuler, anticiper et décider avant d'agir sur le terrain.",
+    intro_eyebrow:"Notre approche", intro_h2:"Du SIG au territoire simulé",
+    intro_p3:"Exemples ci-contre et plus bas : maquettes 3D du Tampon (La Réunion) et de Mayotte, avec bâtiments, végétation et relief.",
+    intro_p1:"Un jumeau numérique assemble vos données SIG, topographiques, réseaux et capteurs dans un modèle 2D/3D unique, mis à jour en continu.",
+    intro_p2:"Élus et techniciens visualisent l'existant, testent des scénarios (crue, urbanisation, travaux) et mesurent leur impact avant toute décision.",
+    s1_eyebrow:"Ce que nous construisons", s1_h2:"Un modèle fiable, alimenté par vos données",
+    s1_li1:"Modèle 3D du territoire (relevés drone, MNT, bâti)", s1_li2:"Intégration des réseaux enterrés et aériens",
+    s1_li3:"Simulation de scénarios (risques, aménagement, travaux)", s1_li4:"Publication web accessible aux élus et aux services",
+    box_h:"À retenir", box_p:"Un jumeau numérique n'est pas une simple maquette 3D : c'est un outil d'aide à la décision, relié à des données réelles et tenu à jour.",
+    cta_title:"Un jumeau numérique pour votre territoire ?", cta_sub:"Décrivez votre besoin, nous définissons ensemble un périmètre réaliste et progressif. Devis sous 48 h.", cta_btn:"Nous contacter",
+    ftr_desc:"Expertise indépendante en systèmes d'information géographique, topographie, détection de réseau et cartographie web. Basé au Tampon, La Réunion.",
+    ftr_h_expertise:"Expertises", ftr_h_company:"Entreprise", ftr_h_contact:"Contact",
+    ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"
+  },
+  en: {
+    nav_about:"About us", nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_twin:"Digital twin", nav_contact:"Contact us", nav_legal:"Legal notice",
+    nav_solutions:"Solutions", nav_sol_mairie:"Municipalities", nav_sol_epci:"Inter-municipal bodies", nav_sol_etat:"State &amp; Institutions", nav_sol_ong:"NGOs &amp; Associations", nav_sol_prive:"Private companies", ftr_h_solutions:"Solutions",
+    bc_home:"Home", eyebrow:"Technical expertise",
+    h1:"Territorial digital twin",
+    lead:"A living digital replica of your territory, to simulate, anticipate and decide before acting on the ground.",
+    intro_eyebrow:"Our approach", intro_h2:"From GIS to a simulated territory",
+    intro_p3:"Examples shown here and below: 3D models of Le Tampon (Réunion) and Mayotte, with buildings, vegetation and terrain.",
+    intro_p1:"A digital twin combines your GIS, survey, network and sensor data into a single 2D/3D model, continuously updated.",
+    intro_p2:"Elected officials and technicians view the existing situation, test scenarios (flood, urban growth, works) and measure their impact before any decision.",
+    s1_eyebrow:"What we build", s1_h2:"A reliable model fed by your data",
+    s1_li1:"3D territory model (drone surveys, DTM, buildings)", s1_li2:"Integration of underground and overhead networks",
+    s1_li3:"Scenario simulation (risks, planning, works)", s1_li4:"Web publication accessible to officials and departments",
+    box_h:"Key point", box_p:"A digital twin is not just a 3D mock-up: it is a decision-support tool linked to real data and kept up to date.",
+    cta_title:"A digital twin for your territory?", cta_sub:"Describe your need, we'll define a realistic, phased scope together. Quote within 48 h.", cta_btn:"Contact us",
+    ftr_desc:"Independent expertise in geographic information systems, land surveying, network detection and web mapping. Based in Le Tampon, Réunion Island.",
+    ftr_h_expertise:"Expertise", ftr_h_company:"Company", ftr_h_contact:"Contact",
+    ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"
+  }
+};
+</script>
+<script src="assets/main.js"></script>
+</body>
+</html>

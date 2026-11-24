@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="assets/logo-mark-geomark.png">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://data.geopf.fr https://unpkg.com https://*.google-analytics.com https://*.googletagmanager.com; media-src 'self'; connect-src 'self' https://formspree.io https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; frame-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://geomark-sig.fr/mentions-legales.html">
 <meta property="og:site_name" content="Geomark SIG">
 <meta property="og:image" content="https://geomark-sig.fr/assets/images/og-image.png">
@@ -47,6 +49,7 @@
       <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
       <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
       <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="jumeau-numerique.html" data-i18n="nav_twin">Jumeau numérique</a>
       <a href="contact.html" class="btn-nav" data-i18n="nav_contact">Nous contacter</a>
     </nav>
     <div class="hdr-right">
@@ -83,11 +86,13 @@
       <p data-i18n="s2_p1">Le site est hébergé par GitHub, Inc. (GitHub Pages), 88 Colin P Kelly Jr Street, San Francisco, CA 94107, États-Unis. Site web : <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a>.</p>
 
       <h2 data-i18n="s3_h">3. Propriété intellectuelle</h2>
-      <p data-i18n="s3_p1">L'ensemble des contenus présents sur ce site (textes, images, cartes, logos, mise en page) est la propriété exclusive de Geomark SIG Solutions, sauf mention contraire. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation préalable écrite est interdite et pourrait constituer une contrefaçon au sens des articles L.335-2 et suivants du Code de la propriété intellectuelle.</p>
+      <p data-i18n="s3_p1">L'ensemble des contenus présents sur ce site (textes, images, cartes, logos, mise en page) est la propriété exclusive de Geomark SIG Solutions, sauf mention contraire. Certaines icônes animées proviennent de ressources libres de droits. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation préalable écrite est interdite et pourrait constituer une contrefaçon au sens des articles L.335-2 et suivants du Code de la propriété intellectuelle.</p>
 
-      <h2 data-i18n="s4_h">4. Données personnelles</h2>
-      <p data-i18n="s4_p1">Ce site ne comporte ni formulaire ni compte utilisateur. Aucune donnée personnelle n'est collectée automatiquement, à l'exception des cookies de mesure d'audience décrits ci-dessous, déposés uniquement avec votre consentement.</p>
+      <h2 id="donnees" data-i18n="s4_h">4. Données personnelles</h2>
+      <p data-i18n="s4_p1">Ce site comporte un formulaire de contact (page « Nous contacter ») mais aucun compte utilisateur. Les données saisies dans ce formulaire (nom, société, adresse email, sujet, message) sont collectées uniquement pour répondre à votre demande de renseignement ou de devis ; la base légale est votre consentement (case à cocher) et l'intérêt légitime de l'éditeur à répondre aux sollicitations professionnelles. Aucune autre donnée personnelle n'est collectée automatiquement, à l'exception des cookies de mesure d'audience décrits ci-dessous, déposés uniquement avec votre consentement.</p>
       <p data-i18n="s4_p2">Les coordonnées transmises spontanément par email ou téléphone (nom, société, message) sont utilisées uniquement pour répondre à votre demande et ne sont ni cédées ni exploitées à d'autres fins. Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification et de suppression de ces données, exerçable en écrivant à <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>.</p>
+      <p data-i18n="s4_p4">Selon la configuration en vigueur, le formulaire transmet votre message à l'éditeur soit par l'intermédiaire d'un service tiers de transmission de formulaires (sous-traitant susceptible d'être situé hors de l'Union européenne), soit en ouvrant votre propre messagerie avec un message pré-rempli que vous validez vous-même. Les messages reçus sont conservés au plus 3 ans après le dernier échange, puis supprimés. Vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition et de limitation, exerçable à <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>, ainsi que du droit d'introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>).</p>
+      <p data-i18n="s4_p5">Pour son affichage, le site charge des ressources depuis des serveurs tiers qui reçoivent nécessairement votre adresse IP : polices Google Fonts (Google), bibliothèque cartographique Leaflet (unpkg.com) et fond de carte Plan IGN (IGN, Géoplateforme) sur la page Contact.</p>
       <p data-i18n="s4_p3">L'hébergeur GitHub peut, dans le cadre strict de la fourniture du service d'hébergement, traiter des données techniques de connexion (adresse IP, journaux serveur) en tant que sous-traitant. Ces données ne sont ni consultées ni exploitées par l'éditeur du site.</p>
 
       <h2 id="cookies" data-i18n="s4b_h">5. Cookies et mesure d'audience</h2>
@@ -129,6 +134,7 @@
       <a href="topographie.html" data-i18n="nav_topo">Topographie</a>
       <a href="detection-reseau.html" data-i18n="nav_detection">Détection de réseau</a>
       <a href="webmapping.html" data-i18n="nav_webmapping">Webmapping</a>
+      <a href="jumeau-numerique.html" data-i18n="nav_twin">Jumeau numérique</a>
     </div>
     <div class="ftr-col">
       <div class="ftr-h" data-i18n="ftr_h_company">Entreprise</div>
@@ -141,7 +147,7 @@
       <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>
       <a href="tel:+33613184710">+33 6 13 18 47 10</a>
       <a href="tel:+262693616923">+262 6 93 61 69 23</a>
-      <a href="https://www.linkedin.com/in/robin-maume/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/company/geomark-sig/" target="_blank">LinkedIn</a>
     </div>
   </div>
   <div class="wrap ftr-bottom">
@@ -153,7 +159,7 @@
 <script>
 window.I18N = {
   fr: {
-    nav_about:"Qui sommes-nous ?", nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
+    nav_about:"Qui sommes-nous ?", nav_sig:"SIG", nav_topo:"Topographie", nav_detection:"Détection de réseau", nav_webmapping:"Webmapping", nav_twin:"Jumeau numérique", nav_contact:"Nous contacter", nav_legal:"Mentions légales",
     nav_solutions:"Solutions", nav_sol_mairie:"Mairies", nav_sol_epci:"Intercommunalités", nav_sol_etat:"État &amp; Institutions", nav_sol_ong:"ONG &amp; Associations", nav_sol_prive:"Entreprises privées", ftr_h_solutions:"Solutions",
     bc_home:"Accueil", eyebrow:"Informations légales",
     h1:"Mentions légales",
@@ -166,10 +172,12 @@ window.I18N = {
     s2_h:"2. Hébergement",
     s2_p1:'Le site est hébergé par GitHub, Inc. (GitHub Pages), 88 Colin P Kelly Jr Street, San Francisco, CA 94107, États-Unis. Site web : <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a>.',
     s3_h:"3. Propriété intellectuelle",
-    s3_p1:"L'ensemble des contenus présents sur ce site (textes, images, cartes, logos, mise en page) est la propriété exclusive de Geomark SIG Solutions, sauf mention contraire. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation préalable écrite est interdite et pourrait constituer une contrefaçon au sens des articles L.335-2 et suivants du Code de la propriété intellectuelle.",
+    s3_p1:"L'ensemble des contenus présents sur ce site (textes, images, cartes, logos, mise en page) est la propriété exclusive de Geomark SIG Solutions, sauf mention contraire. Certaines icônes animées proviennent de ressources libres de droits. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation préalable écrite est interdite et pourrait constituer une contrefaçon au sens des articles L.335-2 et suivants du Code de la propriété intellectuelle.",
     s4_h:"4. Données personnelles",
-    s4_p1:"Ce site ne comporte ni formulaire ni compte utilisateur. Aucune donnée personnelle n'est collectée automatiquement, à l'exception des cookies de mesure d'audience décrits ci-dessous, déposés uniquement avec votre consentement.",
+    s4_p1:"Ce site comporte un formulaire de contact (page « Nous contacter ») mais aucun compte utilisateur. Les données saisies dans ce formulaire (nom, société, adresse email, sujet, message) sont collectées uniquement pour répondre à votre demande de renseignement ou de devis ; la base légale est votre consentement (case à cocher) et l'intérêt légitime de l'éditeur à répondre aux sollicitations professionnelles. Aucune autre donnée personnelle n'est collectée automatiquement, à l'exception des cookies de mesure d'audience décrits ci-dessous, déposés uniquement avec votre consentement.",
     s4_p2:'Les coordonnées transmises spontanément par email ou téléphone (nom, société, message) sont utilisées uniquement pour répondre à votre demande et ne sont ni cédées ni exploitées à d\'autres fins. Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d\'un droit d\'accès, de rectification et de suppression de ces données, exerçable en écrivant à <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>.',
+    s4_p4:'Selon la configuration en vigueur, le formulaire transmet votre message à l\'éditeur soit par l\'intermédiaire d\'un service tiers de transmission de formulaires (sous-traitant susceptible d\'être situé hors de l\'Union européenne), soit en ouvrant votre propre messagerie avec un message pré-rempli que vous validez vous-même. Les messages reçus sont conservés au plus 3 ans après le dernier échange, puis supprimés. Vous disposez d\'un droit d\'accès, de rectification, d\'effacement, d\'opposition et de limitation, exerçable à <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>, ainsi que du droit d\'introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>).',
+    s4_p5:'Pour son affichage, le site charge des ressources depuis des serveurs tiers qui reçoivent nécessairement votre adresse IP : polices Google Fonts (Google), bibliothèque cartographique Leaflet (unpkg.com) et fond de carte Plan IGN (IGN, Géoplateforme) sur la page Contact.',
     s4_p3:"L'hébergeur GitHub peut, dans le cadre strict de la fourniture du service d'hébergement, traiter des données techniques de connexion (adresse IP, journaux serveur) en tant que sous-traitant. Ces données ne sont ni consultées ni exploitées par l'éditeur du site.",
     s4b_h:"5. Cookies et mesure d'audience",
     s4b_p1:'Ce site utilise <strong>Google Analytics</strong> (Google Ireland Ltd / Google LLC) pour mesurer la fréquentation (pages visitées, provenance, durée de visite). Ces cookies ne sont déposés qu\'après votre consentement explicite, via le bandeau affiché en bas de page.',
@@ -184,7 +192,7 @@ window.I18N = {
     ftr_copy:"© 2025–2026 Geomark SIG Solutions · SIRET 939 546 248 00013"
   },
   en: {
-    nav_about:"About us", nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_contact:"Contact us", nav_legal:"Legal notice",
+    nav_about:"About us", nav_sig:"GIS", nav_topo:"Land Surveying", nav_detection:"Network Detection", nav_webmapping:"Web Mapping", nav_twin:"Digital twin", nav_contact:"Contact us", nav_legal:"Legal notice",
     nav_solutions:"Solutions", nav_sol_mairie:"Municipalities", nav_sol_epci:"Inter-municipal bodies", nav_sol_etat:"State &amp; Institutions", nav_sol_ong:"NGOs &amp; Associations", nav_sol_prive:"Private companies", ftr_h_solutions:"Solutions",
     bc_home:"Home", eyebrow:"Legal information",
     h1:"Legal notice",
@@ -197,10 +205,12 @@ window.I18N = {
     s2_h:"2. Hosting",
     s2_p1:'This site is hosted by GitHub, Inc. (GitHub Pages), 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA. Website: <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a>.',
     s3_h:"3. Intellectual property",
-    s3_p1:"All content on this site (text, images, maps, logos, layout) is the exclusive property of Geomark SIG Solutions, unless otherwise stated. Any reproduction, representation or distribution, in whole or in part, without prior written authorisation is prohibited and may constitute an infringement under the French Intellectual Property Code.",
+    s3_p1:"All content on this site (text, images, maps, logos, layout) is the exclusive property of Geomark SIG Solutions, unless otherwise stated. Some animated icons come from royalty-free resources. Any reproduction, representation or distribution, in whole or in part, without prior written authorisation is prohibited and may constitute an infringement under the French Intellectual Property Code.",
     s4_h:"4. Personal data",
-    s4_p1:"This site does not include any form or user account. No personal data is collected automatically, except for the audience-measurement cookies described below, which are only set with your consent.",
+    s4_p1:"This site includes a contact form (the Contact page) but no user account. The data entered in this form (name, company, email address, subject, message) is collected solely to answer your enquiry or quote request; the legal basis is your consent (checkbox) and the publisher's legitimate interest in answering professional enquiries. No other personal data is collected automatically, except for the audience-measurement cookies described below, which are only set with your consent.",
     s4_p2:'Contact details voluntarily shared by email or phone (name, company, message) are used solely to respond to your request and are never transferred or used for other purposes. In accordance with the GDPR and French data protection law, you have the right to access, correct and delete this data by writing to <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>.',
+    s4_p4:'Depending on the configuration in force, the form sends your message to the publisher either through a third-party form-handling service (a processor that may be located outside the European Union), or by opening your own email application with a pre-filled message that you validate yourself. Messages received are kept for a maximum of 3 years after the last exchange, then deleted. You have the right of access, rectification, erasure, objection and restriction, which you can exercise at <a href="mailto:contact@geomark-sig.fr">contact@geomark-sig.fr</a>, as well as the right to lodge a complaint with the CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>).',
+    s4_p5:'To be displayed, the site loads resources from third-party servers, which necessarily receive your IP address: Google Fonts (Google), the Leaflet mapping library (unpkg.com) and the Plan IGN base map (IGN, Géoplateforme) on the Contact page.',
     s4_p3:"As part of providing the hosting service, GitHub may process technical connection data (IP address, server logs) as a data processor. This data is neither accessed nor used by the site publisher.",
     s4b_h:"5. Cookies and audience measurement",
     s4b_p1:'This site uses <strong>Google Analytics</strong> (Google Ireland Ltd / Google LLC) to measure audience (pages visited, referral source, visit duration). These cookies are only set after your explicit consent, via the banner shown at the bottom of the page.',
