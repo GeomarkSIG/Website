@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   langBtns.forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
 
   /* contact form : envoi via FORM_ENDPOINT (service tiers) ou, à défaut, via la messagerie de l'utilisateur (mailto) */
-  const FORM_ENDPOINT = '';            // ex. 'https://formspree.io/f/xxxxxxxx' : laisser vide = mode mailto
+  const FORM_ENDPOINT = 'https://formsubmit.co/ajax/contact@geomark-sig.fr';   // service tiers FormSubmit ; vide = mode mailto
   const MAIL_TO = 'contact@geomark-sig.fr';
   const ctForm = document.getElementById('ctForm');
   if (ctForm) {
@@ -72,18 +72,24 @@ document.addEventListener('DOMContentLoaded', () => {
       if (ctForm.website && ctForm.website.value) return;            // honeypot anti-spam
       if (!ctForm.checkValidity()) { ctForm.reportValidity(); say('f_note_inv', true); return; }
       const f = new FormData(ctForm);
-      if (FORM_ENDPOINT) {
-        try {
-          const r = await fetch(FORM_ENDPOINT, { method: 'POST', body: f, headers: { Accept: 'application/json' } });
-          if (!r.ok) throw new Error('http ' + r.status);
-          ctForm.reset(); say('f_note_ok', false);
-        } catch (err) { say('f_note_err', true); }
-      } else {
+      const openMail = () => {
         const subject = '[Site Geomark] ' + f.get('subject') + ' - ' + f.get('name');
         const body = f.get('message') + '\n\n' + f.get('name') + '\n' + f.get('email');
         window.location.href = 'mailto:' + MAIL_TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-        say('f_note_mail', false);
-      }
+      };
+      if (FORM_ENDPOINT) {
+        const btn = ctForm.querySelector('button[type=submit]');
+        if (btn) btn.disabled = true;
+        try {
+          f.append('_subject', '[Site Geomark] ' + f.get('subject') + ' - ' + f.get('name'));
+          f.append('_replyto', f.get('email'));
+          const r = await fetch(FORM_ENDPOINT, { method: 'POST', body: f, headers: { Accept: 'application/json' } });
+          const j = await r.json().catch(() => ({}));
+          if (!r.ok || j.success === 'false' || j.success === false) throw new Error('send failed');
+          ctForm.reset(); say('f_note_ok', false);
+        } catch (err) { say('f_note_err', true); openMail(); }
+        if (btn) btn.disabled = false;
+      } else { openMail(); say('f_note_mail', false); }
     });
   }
 

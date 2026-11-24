@@ -26,8 +26,9 @@ Le site est hébergé sur **GitHub Pages** (réponse `Server: GitHub.com`, fichi
 
 Le formulaire (`contact.html`, logique dans `assets/main.js`) fonctionne en deux modes :
 
-- **Mode actuel (par défaut)** : `FORM_ENDPOINT` est vide → le bouton « Envoyer » ouvre la messagerie du visiteur avec un message pré-rempli vers `contact@geomark-sig.fr` (aucun serveur, aucune donnée stockée par le site).
-- **Envoi direct** : créer un formulaire chez un prestataire (ex. Formspree, formulaire gratuit) et renseigner son URL dans `FORM_ENDPOINT` en haut du bloc formulaire de `assets/main.js`. Si le prestataire n'est pas `formspree.io`, adapter aussi `connect-src` et `form-action` dans la balise CSP de chaque page, et nommer le sous-traitant dans `mentions-legales.html` (section 4).
+- **Mode actuel** : `FORM_ENDPOINT` pointe vers **FormSubmit** (`https://formsubmit.co/ajax/contact@geomark-sig.fr`), service gratuit sans compte qui transmet le message par e-mail à `contact@geomark-sig.fr`. **Activation obligatoire** : à la toute première soumission, FormSubmit envoie un e-mail d'activation à cette adresse ; cliquer sur le lien qu'il contient (vérifier aussi les courriers indésirables). Tant que ce n'est pas fait, les messages ne sont pas livrés.
+- **Secours** : si l'envoi échoue, le site ouvre la messagerie du visiteur (mailto) et affiche l'adresse e-mail.
+- **Autre service** : changer `FORM_ENDPOINT` (vide = mode mailto seul) et adapter `connect-src` et `form-action` dans la balise CSP de chaque page, puis nommer le sous-traitant dans `mentions-legales.html` (section 4).
 
 Protections intégrées : champ piège anti-spam (honeypot), validation des champs, longueur limitée, case de consentement obligatoire.
 
