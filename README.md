@@ -26,9 +26,9 @@ Le site est hébergé sur **GitHub Pages** (réponse `Server: GitHub.com`, fichi
 
 Le formulaire (`contact.html`, logique dans `assets/main.js`) fonctionne en deux modes :
 
-- **Mode actuel** : `FORM_ENDPOINT` pointe vers **FormSubmit** (`https://formsubmit.co/ajax/contact@geomark-sig.fr`), service gratuit sans compte qui transmet le message par e-mail à `contact@geomark-sig.fr`. **Activation obligatoire** : à la toute première soumission, FormSubmit envoie un e-mail d'activation à cette adresse ; cliquer sur le lien qu'il contient (vérifier aussi les courriers indésirables). Tant que ce n'est pas fait, les messages ne sont pas livrés.
+- **Mode actuel** : **Web3Forms** (`https://api.web3forms.com/submit`), service gratuit qui transmet le message par e-mail à `contact@geomark-sig.fr`. Obtenir une clé d'accès sur web3forms.com (envoyée par e-mail), la coller dans `WEB3_KEY` en haut du bloc formulaire de `assets/main.js` (clé publique, sans danger dans le code). Tant que `WEB3_KEY` est vide, seul le mode mailto est actif. (FormSubmit a été écarté : son lien d'activation échouait.)
 - **Secours** : si l'envoi échoue, le site ouvre la messagerie du visiteur (mailto) et affiche l'adresse e-mail.
-- **Autre service** : changer `FORM_ENDPOINT` (vide = mode mailto seul) et adapter `connect-src` et `form-action` dans la balise CSP de chaque page, puis nommer le sous-traitant dans `mentions-legales.html` (section 4).
+- **Autre service** : changer `FORM_ENDPOINT` et `WEB3_KEY` et adapter `connect-src` et `form-action` dans la balise CSP de chaque page, puis nommer le sous-traitant dans `mentions-legales.html` (section 4).
 
 Protections intégrées : champ piège anti-spam (honeypot), validation des champs, longueur limitée, case de consentement obligatoire.
 

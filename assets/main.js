@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
   langBtns.forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
 
   /* contact form : envoi via FORM_ENDPOINT (service tiers) ou, à défaut, via la messagerie de l'utilisateur (mailto) */
-  const FORM_ENDPOINT = 'https://formsubmit.co/ajax/contact@geomark-sig.fr';   // service tiers FormSubmit ; vide = mode mailto
+  const FORM_ENDPOINT = 'https://api.web3forms.com/submit';   // service tiers Web3Forms
+  const WEB3_KEY = 'ac633413-1b4a-4ca2-85d3-7ae6dce368b2';                 // clé d'accès Web3Forms (publique) ; vide = mode mailto seul
   const MAIL_TO = 'contact@geomark-sig.fr';
   const ctForm = document.getElementById('ctForm');
   if (ctForm) {
@@ -77,15 +78,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const body = f.get('message') + '\n\n' + f.get('name') + '\n' + f.get('email');
         window.location.href = 'mailto:' + MAIL_TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       };
-      if (FORM_ENDPOINT) {
+      if (FORM_ENDPOINT && WEB3_KEY) {
         const btn = ctForm.querySelector('button[type=submit]');
         if (btn) btn.disabled = true;
         try {
-          f.append('_subject', '[Site Geomark] ' + f.get('subject') + ' - ' + f.get('name'));
-          f.append('_replyto', f.get('email'));
-          const r = await fetch(FORM_ENDPOINT, { method: 'POST', body: f, headers: { Accept: 'application/json' } });
+          const payload = {
+            access_key: WEB3_KEY,
+            subject: '[Site Geomark] ' + f.get('subject') + ' - ' + f.get('name'),
+            from_name: f.get('name'), name: f.get('name'), email: f.get('email'),
+            sujet: f.get('subject'), message: f.get('message'), botcheck: ''
+          };
+          const r = await fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(payload) });
           const j = await r.json().catch(() => ({}));
-          if (!r.ok || j.success === 'false' || j.success === false) throw new Error('send failed');
+          if (!r.ok || !j.success) throw new Error('send failed');
           ctForm.reset(); say('f_note_ok', false);
         } catch (err) { say('f_note_err', true); openMail(); }
         if (btn) btn.disabled = false;
